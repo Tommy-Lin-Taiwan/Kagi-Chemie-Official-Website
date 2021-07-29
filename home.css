@@ -1,3 +1,50 @@
 h1 {
   color: orange;
+  font-size: 20px;
+}
+a:hover {
+  color: purple;
+  text-decoration: none;
+}
+.trial {
+  /*background-color: purple;*/
+  padding: 20px;
+  border: 1px solid red;
+}
+/*color and else for testing purpose*/
+.all {
+  background-color: white;
+  margin: 50px;
+  border: 1px solid blue;
+}
+.contents {
+  margin: 10px 10px 10px 10px;
+}
+
+/*sideMenu and sidemenuNext adds up to 98% space for leftover=margin*/
+.sideMenu {
+  background-color: white;
+  align-items: center;
+  padding: 5px;
+  margin: 0 auto;
+  width: 22%;
+  float: left;
+}
+/*This let the box to be in center of sideMenu box*/
+.sideList {
+  /*background-color: lightsalmon;*/
+  text-align: center;
+  margin: 0 auto;
+  width: 120px;
+  border: 3px solid green;
+}
+.sideMenuNext {
+  /*background-color: blueviolet;*/
+  padding: 10px;
+  float: right;
+  width: 76%;
+}
+.bottom {
+  background-color: brown;
+  color: white;
 }
