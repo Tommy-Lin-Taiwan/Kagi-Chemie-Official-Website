@@ -9,37 +9,55 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Style should be set accordingly to home-->
-    <style></style>
+    <style>
+        h1 {
+            text-align: left;
+            font-family:sans-serif;
+        }
+        #bottom {
+            color: white;
+        }
+    </style>
     <title>About Us</title>
 </head>
 <body>
-    <div class='container'>
-    </div>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+    <table width='100%'>
+        <tr>
+            <!--Create sidebar menu-->
+            <td valign="top" width='20%'; style='background-color:darkgrey'>
+                <div class='sidebar'>
+                   <ul class='nav-sidebar'>
+                       <li><a href='#brief'>公司簡介</a></li>
+                       <li><a href='#coreval'>核心價值</a></li>
+                       <li><a href='#history'>成立歷史</a></li>
+                       <li><a href='#sus'>永久發展</a></li>
+                   </ul> 
+                </div>
+            </td>
+            <td valign='top' width='80%' style='background-color:paleturquoise'>
+                <h1 id='brief'>公司簡介</h1>
+                <p></p>
+                <h1 id='coreval'>核心價值</h1>
+                <p></p>
+                <h1 id='history'>成立歷史</h1>
+                <p></p>
+                <h1 id='sus'>永久發展</h1>
+                <p></p>
+            </td>
+        </tr>
+    </table>
+    <table width='100%'>
+        <tr>
+            <td width=30% height='100px' style='background-color:blue'></td>
+            <td width=70% height='100px' style='background-color:blue; text-align:left; font-size:small'>
+                <pre style='color: white'>
+                    聯絡我們:
+                    Tel:  9090909090
+                    Fax:  09090909090
+                    地址: 90909090909090909
+                </pre>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
