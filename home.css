@@ -23,7 +23,7 @@ a:hover {
 
 /*sideMenu and sidemenuNext adds up to 98% space for leftover=margin*/
 .sideMenu {
-  background-color: white;
+  background-color: orangered;
   align-items: center;
   padding: 5px;
   margin: 0 auto;
@@ -32,14 +32,14 @@ a:hover {
 }
 /*This let the box to be in center of sideMenu box*/
 .sideList {
-  /*background-color: lightsalmon;*/
+  background-color: lightsalmon;
   text-align: center;
   margin: 0 auto;
-  width: 120px;
+  width: 95%;
   border: 3px solid green;
 }
 .sideMenuNext {
-  /*background-color: blueviolet;*/
+  background-color: blueviolet;
   padding: 10px;
   float: right;
   width: 76%;
