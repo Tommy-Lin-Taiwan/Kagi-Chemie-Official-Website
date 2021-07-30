@@ -21,6 +21,9 @@ body {
   .nav-item{
     margin-right:10px;
   }
+  /* For dropdown items*/
+  .nav-item:hover .dropdown-menu { display: block; }
+  
   .nav-link{
     width: 100%;
     color: #374c6a !important;
@@ -30,6 +33,8 @@ body {
   .nav-link:hover{
     color: #fb3d36 !important;
   }
+  
+
   /* End Navigation */
 
   /* Hero Section */
