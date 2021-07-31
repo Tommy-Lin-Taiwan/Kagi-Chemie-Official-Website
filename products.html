@@ -62,7 +62,7 @@
 
 		<!-- Paragraph Section -->
 		<div class="in__container py-5 px-5 text-center">
-				<h2>About Our Products</h2>
+				<h1>About Our Products</h1>
                 <div class="container-lg p-5">
                     <img class='img-fluid' src='source\trademark.png' alt="Our products">
                     <p style='text-align:left; text-indent: 30px;'>//General Product descriptionsHello this is your captain speaking, HTML stands for HyperText Markup Language.It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the
@@ -73,8 +73,7 @@
         <div class="in__container p-5">
             <h2 style='text-align:center;'>Our Products</h2>
             <div class="container-lg m-5">
-                <script src='../utils\product_search_scour.js'></script>
-                <select class='form-select' id='Selection' onchange="selects(this.value)">
+                <select class='form-select' id='Selection' style="width:25%; float:left"onchange="selects(this.value)">
                     <option selected>Select a field of search</option>
                     <option value=0>Product Name</option>
                     <option value=1>Properties</option>
@@ -82,8 +81,9 @@
                     <option value=3>Usage</option>
                     <option value=4>Packaging</option>
                 </select>
-                <input class="form-control" id="search" onkeyup='myFunction()' type="text" placeholder="Find a product from below">
-                <h4>Scouring Agents</h4>
+                <input class="form-control md-4" style="width:75%;" id="search" onkeyup='sort()' type="text" placeholder="Find a product from below">
+                <br><h3 style='text-indent:3vw;'>Scouring Agents</h3>
+                <!--Table 1: scourol class-->
                 <table id="table_1" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
                     <thead>
                         <tr>
@@ -96,20 +96,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="forms" style='font-weight:600;'><p>Scourol NK</p><br><p>Scourol BK</p><br><p>Scourol PK</p></td>
+                            <!--Scourol PK-->
+                            <td class="forms" style='font-weight:600;'><p>Scourol PK</p></td>
                             <td class='forms'>
                                 <ul>
-                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Appearance: <p>Transparent colorless / yellow liquid</p></li>
                                     <li>Ionize:</li>
                                     <ul>
-                                        <li>Non-ionized (ALL)</li>
-                                        <li>Anionized (NK, PK)</li>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
                                     </ul>
-                                    <li>PH(1%):</li>
-                                    <ul>
-                                        <li>8.5±1 (NK)</li>
-                                        <li>7.0±1 (BK, PK)</li>
-                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
                                 </ul>
                             </td>
                             <td class='forms'>
@@ -123,20 +120,21 @@
                             <td class='forms'>
                                 <ul>
                                     <li>Specialized usage in dyeing and scouring</li>
-                                    <li>Applicable on all kinds of fibers</li>
+                                    <li>Applicable on all kinds of fibers and elastic fabrics</li>
                                 </ul>
                             </td>
                             <td class='forms'>
-                                <em>50KG/unit</em>
+                                <p>120KG/barrel<p>
                             </td>
                         </tr>
+                        <!--Scourol SC-->
                         <tr>
-                            <td class="forms" style="font-weight:600;"><p>Scourol SC-L</p><br><p>Scourol SC-100</p></td>
+                            <td class="forms" style="font-weight:600;"><p>Scourol SC Series</p></td>
                             <td class='forms'>
                                 <ul>
                                     <li>Appearance: <p>Transparent colorless liquid</p></li>
                                     <li>Ionize: <p>Non-ionized</p></li>
-                                    <li>PH(1%):7.0±1</li>
+                                    <li>PH(1%): 7.0±1</li>
                                 </ul>
                             </td>
                             <td class='forms'>
@@ -144,7 +142,7 @@
                                     <li>Excellent capability of cleaning</li>
                                     <li>Outstanding alkali resistance and penetration properties</li>
                                     <li>Great emulsive dispersion</li>
-                                    <li>Higher concentration</li>
+                                    <li>Higher concentration, cost-efficient</li>
                                     <li>High temperature processing</li>
                                 </ul>
                             </td>
@@ -155,11 +153,901 @@
                                 </ul>
                             </td>
                             <td class='forms'>
-                                <em>120KG/unit</em>
+                                <p>120KG/barrel</p>
+                            </td>
+                        </tr>
+                        <!--Desizing E-TH-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Desizing E-TH</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent brown liquid</p></li>
+                                    <li>Chemical Activity:</li>
+                                    <ul>
+                                        <li>5000αTu/g</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Capable of removing starch, PVA and acrylic pastes</li>
+                                    <li>De-pasting effect maxed under high temperature with neutral PH</li>
+                                    <li>Prevent stains formed from acrylic pastes</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Applicable on cotton, linen and other blended products</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Deoiler ST-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Deoiler ST</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>White paste</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 10.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Capable of removing oil and other stains off the fiber</li>
+                                    <li>Great emulsive dispersion</li>
+                                    <li>Excellent capability of cleaning</li>
+                                    <li>Possesses scouring effect, usable as a scouring agent</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Ask dadda</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>150KG/barrel<p>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+
+                <!--Table 2: wetting class-->
+                <br><h3 style='text-indent:3vw;'>Wetting Agents</h3>
+                <table id="table_2" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Penetrate NS-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Penetrate NS Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Enhances scouring effect in processes</li>
+                                    <li>Increases dye uptake and avoids color difference</li>
+                                    <li>Great permeability, usable with water repellants</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Increasing permeability on printing and coating</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Penetrate CD-700-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Penetrate CD-700</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 6.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Superb permeability and wettability</li>
+                                    <li>Increases dye uptake, minimize color differences</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Increasing permeability on printing and coating</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 3: chelated class-->
+                <br><h3 style='text-indent:3vw;'>Chelated Dispersing Agents</h3>
+                <table id="table_3" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Chelamax A-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Chelamax A Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent chelated dispersing effects for cations, eg.Ca, Mg, Fe</li>
+                                    <li>Effective wash-away oligomers, reduce equipment contamination</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Complete removal of excess dye</li>
+                                    <li>Higher quality for scouring, dyeing and bleaching</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 4: stripping class-->
+                <br><h3 style='text-indent:3vw;'>Stripping Agents</h3>
+                <table id="table_4" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Remogen AS-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Remogen AS</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Cationized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Damage-free operation on fiber structures</li>
+                                    <li>Effective removal of silicone stain and water repellant stain</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Removal of silicone or water repellant before processing</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 5: defoaming class-->
+                <br><h3 style='text-indent:3vw;'>Defoaming Agents</h3>
+                <table id="table_5" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Abstergen R-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Abstergen R</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Milky liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Weakly anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Superb ability of defoaming and foam suppression</li>
+                                    <li>Wide suitable PH range</li>
+                                    <li>High stability with no equipment contamination</li>
+                                    <li>Little dose required</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Ask dadda, loc="table 5, tr 1"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Antifoam JD-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Antifoam JD</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Milky liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Weakly anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Superb ability of defoaming and foam suppression</li>
+                                    <li>High stability with no equipment contamination</li>
+                                    <li>Little dose required</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Ask dadda, loc="table 5, tr 2"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Antifoam DF-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Antifoam DF</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>No Silicon contained</li>
+                                    <li>Superb ability of defoaming and foam suppression</li>
+                                    <li>Wide suitable PH range</li>
+                                    <li>High stability with no equipment contamination</li>
+                                    <li>Little dose required</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Ask dadda, loc="table 5, tr 3"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 6: antistatic class-->
+                <br><h3 style='text-indent:3vw;'>Antistatic Agents</h3>
+                <table id="table_6" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Antistatic N20-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Antistatic N20</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Outstanding antistatic property</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Companionship of water repellant without reducing repelling effectiveness</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 7: suspending class-->
+                <br><h3 style='text-indent:3vw;'>Suspending Agents</h3>
+                <table id="table_7" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Suspending CDP-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Suspending CDP</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent brown liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Prevent precipitation under the presence of both anionic and cationic dye at the same time</li>
+                                    <li>Effectively prevents precipication and contamination</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>A/N, A/W, T/CDP one-bath-dyeing</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 8: resisting class-->
+                <br><h3 style='text-indent:3vw;'>Resisting Agents</h3>
+                <table id="table_8" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Resisting N-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Resisting N Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent tan liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Effectively prevents dye contamination on white basis when printing</li>
+                                    <li>Prevention of direct / reacting dye contamination on nylon</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>ask dadda, loc="table 8 tr 1"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 9: PH controlling class-->
+                <br><h3 style='text-indent:3vw;'>PH Controlling Agents</h3>
+                <table id="table_9" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Slider KVS-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Slider KVS</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent PH stability, effectively enhance dyeing quality</li>
+                                    <li>Reproducibility of high-quality conformal dyeing</li>
+                                    <li>Outstanding dye uptake</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Usage under acidic dyeing environments</li>
+                                    <li>Manufacture of high-quality conformal-dyed cloth</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Dyeing Acid-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Dyeing Acid</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Superb stability, non-volatile, excellent freezing resistance</li>
+                                    <li>Excellent dyeing stability</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Replacement of glacial acetic acid</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Substitution Alkali-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Substitution Alkali</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent colorless liquid</p></li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Superb stability</li>
+                                    <li>Low dosage, only 1/4 of dosage of pure alkali</li>
+                                    <li>Increases dye uptake and color purity</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>ask dadda, loc="table 9, tr 3"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 10: carrier class-->
+                <br><h3 style='text-indent:3vw;'>Carrier</h3>
+                <table id="table_10" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Carrier HMN-100-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Carrier HMN-100</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent tan liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent stability with little foam produced</li>
+                                    <li>Excellent swelling and migration properties</li>
+                                    <li>Enhances dye uptake</li>
+                                    <li>Outstanding horizontal strip processing and color modification</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>High-temperature carrier for PET</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Barring TM-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Barring TM</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent stability with little foam produced</li>
+                                    <li>Excellent retarding and migration effect</li>
+                                    <li>Tasteless and odorless</li>
+                                    <li>Outstanding horizontal strip processing and color modification</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>High-temperature carrier for PET</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 11: levelling class-->
+                <br><h3 style='text-indent:3vw;'>Levelling Agents</h3>
+                <table id="table_11" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Levelling LD-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Levelling LD Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 7.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Low-foaming and dispersed, excellent retarding and migration properties</li>
+                                    <li>Prevents dye flocculation under high temperature</li>
+                                    <li>Excellent color modification, possible light stripping (10~20%)</li>
+                                    <li>Excellent chemical proofing</li>
+                                    <li>Higher concentration, cost-efficient/li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>ask dadda, loc="table 11, tr 1"</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Rapisol TL-560-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Rapisol TL-560</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Low-foaming, excellent retarding, dispersive and migration properties</li>
+                                    <li>Prevents dye flocculation under high temperature</li>
+                                    <li>Excellent color modification without achromatic effects</li>
+                                    <li>Excellent chemical proofing</li>
+                                    <li>Higher concentration, cost-efficient/li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>T/C, T/R one-bath-dyeing usage</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Levelling NL-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Levelling NL Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent tan liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent retarding and migration properties</li>
+                                    <li>Prevention of horizontal strips</li>
+                                    <li>Excellent stripping and color modification</li>
+                                    <li>Great compatibility with acidic fixative</li>
+                                    <li>Higher concentration, cost-efficient</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Dyeing on nylon and wool products</li>
+                                    <li>Acidic and acidic premetallized dye</li>
+                                    <li>Used as stripping agents</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Levelling NLS-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Levelling NLS Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent tan liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent retarding and migration properties</li>
+                                    <li>Prevention of horizontal strips</li>
+                                    <li>Excellent stripping and color modification</li>
+                                    <li>Great compatibility with acidic fixative</li>
+                                    <li>Higher concentration, cost-efficient</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Dyeing on nylon and wool products</li>
+                                    <li>Acidic and acidic premetallized dye</li>
+                                    <li>Used as stripping agents</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Levelling CL-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Levelling CL Series</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent brown liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Excellent dispersive and migration properties</li>
+                                    <li>Prevents flocculation of direct / reactive dye during dyeing</li>
+                                    <li>Low-foaming</li>
+                                    <li>Excellent chemical proofing</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Applicable on T/C, T/R one-bath scouring and dyeing</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>120KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!--Table 12: antimigrating class-->
+                <br><h3 style='text-indent:3vw;'>Antimigrating Agents</h3>
+                <table id="table_12" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                    <thead>
+                        <tr>
+                            <th scope='col'>Product Name</th>
+                            <th scope='col'>Properties</th>
+                            <th scope='col'>Speciality</th>
+                            <th scope='col'>Usage</th>
+                            <th scope='col'>Packaging</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Antimigrator ES-L2-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Antimigrator ES-L2</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent tan liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                        <li>Anionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.5±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Outstanding dye uptake and conformal dyeing</li>
+                                    <li>Outstanding compatibility with dyes</li>
+                                    <li>No combination and flocculation of metallic cations</li>
+                                    <li>Excellent stabillity, no hydrolysis</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Dyeing Polyester, cotton and blended products</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>125KG/barrel<p>
+                            </td>
+                        </tr>
+                        <!--Antimigrator ES-P-->
+                        <tr>
+                            <td class="forms" style='font-weight:600;'><p>Antimigrator ES-P</p></td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Appearance: <p>Transparent yellow liquid</p></li>
+                                    <li>Ionize:</li>
+                                    <ul>
+                                        <li>Non-ionized</li>
+                                    </ul>
+                                    <li>PH(1%): 8.0±1</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Outstanding dye uptake and conformal dyeing</li>
+                                    <li>Outstanding compatibility with dyes</li>
+                                    <li>No combination and flocculation of metallic cations</li>
+                                    <li>Excellent stabillity, no hydrolysis</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <ul>
+                                    <li>Dyeing Polyester, cotton and blended products</li>
+                                </ul>
+                            </td>
+                            <td class='forms'>
+                                <p>125KG/barrel<p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
                 <!--
                 <div class="container-lg text-center">
                     <p>See below for a variety of choices!</p>
@@ -229,6 +1117,7 @@
             function selects(s) {
                 selection = s;
             }
+            /*
             function myFunction() {
                 var input, filter, table_1, tr_1, td_1;
                 input = document.getElementById("search");
@@ -247,19 +1136,22 @@
                     }       
                 }
             }
+            */
             function sort(){
                 var input, filter, tables, trs, tds, s;
                 input = document.getElementById("search");
                 filter = input.value.toLowerCase();
-                var table_count = 2;
+                var table_count = 9;
                 var col_count = 5;
                 tables = new Array(table_count);
                 trs = new Array(table_count);
-                for (var i = 0; i < table_count; i++){
-                    s = "table_" + i.toString();
+                for (var i = 0; i < tables.length; i++){
+                    s = "table_" + (i+1).toString();
+                    /*console.log(s);*/
                     tables[i] = document.getElementById(s);
                     trs[i] = tables[i].getElementsByTagName("tr");
-                    for (var j = 0; j < col_count; j++){
+                    for (var j = 0; j < trs[i].length; j++){
+                        /*console.log(i,j);*/
                         tds = trs[i][j].getElementsByTagName("td")[selection];
                         if (tds) {
                             var txtValue = tds.textContent || tds.innerText;
@@ -272,6 +1164,7 @@
                         }
                     }
                 }
+                console.log("successful search");
             }
         </script>
 
