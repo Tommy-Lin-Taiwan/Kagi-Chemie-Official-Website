@@ -1,0 +1,135 @@
+body {
+    /* overflow-x: make sures that there's no scrolling in the x direction */
+    justify-content:left;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: #616971;
+  }
+
+/* Nagivation */
+.navbar {
+  height: 80px;
+  display: flex;
+  font-size: 1.15rem;
+}
+.collapse {
+  justify-content: flex-end;
+  /* background-color:blue; */
+}
+.nav-item {
+  margin-right: 10px;
+}
+/* For dropdown items*/
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-link {
+  width: 100%;
+  color: #374c6a !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fb3d36 !important;
+}
+/* End Navigation */
+
+/* Banner Section */
+.banner{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+.banner h3{
+    margin:1rem;
+    color: #fb3d36;
+}
+/* End Banner Section */
+
+/* to Email Section */
+.toEmail{
+    background: rgb(127,255,212);
+    background: linear-gradient(0deg, rgba(127,255,212,0.2) 0%, rgba(237,250,255,0.5) 100%);
+    display:flex;s
+}
+.toEmail__container{
+    background-color:rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 10px 15px rgba(69,95,165,0.2);
+    width:100%;
+    margin:3rem;
+    padding:2rem;
+    border-radius:1.5rem;
+}
+.toEmail button{
+    margin-top:2rem;
+}
+/* End to Email Section */
+
+/* Info Section */
+.info{
+    padding:1rem;
+    font-size:0.9rem;
+}
+.info__container{
+    display:flex;
+    justify-content:center;
+}
+.info__col__left{
+    margin:1rem;
+    color:#455f87;
+    text-transform:uppercase;
+    font-weight:500;
+}
+.info__col__right{
+    margin:1rem;
+    color:#374c6a;
+    font-weight:300;
+}
+
+/* End Info Section */
+
+/* Footer Section */
+.footer {
+  background-color: #fafafa;
+  padding: 2rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__nav-link {
+  margin-top: 10px;
+  color: #111220;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer__nav-link:hover {
+  color: #111220 !important;
+}
+.footer__email {
+  margin-top: 10px;
+  color: #fb3d36;
+  font-weight: 800;
+  text-decoration: none;
+}
+.footer__email:hover {
+  color: #fb3d36 !important;
+}
+.footer__nav-div {
+  margin-top: 10px;
+  color: #111220;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__rights {
+  font-weight: 200;
+  color: #111220;
+}
+/* End Footer Section */
