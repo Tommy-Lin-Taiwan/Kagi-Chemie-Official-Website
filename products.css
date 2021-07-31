@@ -54,6 +54,33 @@ body {
 }
 /* End Hero Section*/
 
+/* Table section */
+.th_1 {
+  text-align: center;
+  width: 15%;
+}
+
+.th_2 {
+  text-align: center;
+  width: 15%;
+}
+
+.th_3 {
+  text-align: center;
+  width: 30%;
+}
+
+.th_4 {
+  text-align: center;
+  width: 30%;
+}
+
+.th_5 {
+  text-align: center;
+  width: 10%;
+}
+/* End Table Section */
+
 /* Business Section */
 .bus-section {
   background: rgb(255, 242, 240);
