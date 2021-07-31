@@ -1,122 +1,129 @@
 /*-- Body Reset --*/
 body {
-    /* overflow-x: make sures that there's no scrolling in the x direction */
-    justify-content:left;
-    overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
-    color: #616971;
-  }
+  /* overflow-x: make sures that there's no scrolling in the x direction */
+  justify-content: left;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #616971;
+}
 
-  /* Nagivation */
-  .navbar{
-    height:80px;
-    display:flex;
-    font-size: 1.15rem;
-  
-  }
-  .collapse{
-    justify-content:flex-end;
-    /* background-color:blue; */
-  }
-  .nav-item{
-    margin-right:10px;
-  }
-  .nav-link{
-    width: 100%;
-    color: #374c6a !important;
-  }
+/* Nagivation */
+.navbar {
+  height: 80px;
+  display: flex;
+  font-size: 1.15rem;
+}
+.collapse {
+  justify-content: flex-end;
+  /* background-color:blue; */
+}
+.nav-item {
+  margin-right: 10px;
+}
+.nav-link {
+  width: 100%;
+  color: #374c6a !important;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
 
-  .nav-link.active, 
-  .nav-link:hover{
-    color: #fb3d36 !important;
-  }
-  /* End Navigation */
+.nav-link.active,
+.nav-link:hover {
+  color: #fb3d36 !important;
+}
+/* End Navigation */
 
-  /* Hero Section */
-  .hero{
-    display:flex;
-    justify-content:center;
-    background-color: #fff;
-    background-image: radial-gradient(#ddd 10%, transparent 11%),
-      radial-gradient(#ddd 10%, transparent 11%);
-    background-size: 15px 15px;
-    background-position: 0 0, 30px 30px;
-    background-repeat: repeat;
-  }
-  .banner{
- 
-    justify-content:center;
-    font-size:50px;
-    word-spacing:20px;
-    font-weight:800;
-    color:#fb3d36;
-  }
-  /* End Hero Section*/
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  background-image: radial-gradient(#ddd 10%, transparent 11%),
+    radial-gradient(#ddd 10%, transparent 11%);
+  background-size: 15px 15px;
+  background-position: 0 0, 30px 30px;
+  background-repeat: repeat;
+}
+.banner {
+  justify-content: center;
+  font-size: 50px;
+  word-spacing: 20px;
+  font-weight: 800;
+  color: #fb3d36;
+}
+/* End Hero Section*/
 
-  /* Business Section */
-  .bus-section{
-    background: rgb(255,242,240);
-    background: linear-gradient(90deg, rgba(255,242,240,1) 0%, rgba(244,253,253,1) 100%);
-  }
-  .bus__container{
-    margin-right:4rem;
-    margin-left:4rem;
-    padding:2rem;
-    background-color:#fff;
-    /* box-shadow: 0px 0px 10px #fecac9; */
-    box-shadow: 0px 0px 10px rgba(13,110,253,0.1);
-    border-radius:20px;
-  }
-  /* End Business Section */
+/* Business Section */
+.bus-section {
+  background: rgb(255, 242, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 242, 240, 1) 0%,
+    rgba(244, 253, 253, 1) 100%
+  );
+}
+.bus__container {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  padding: 2rem;
+  background-color: #fff;
+  /* box-shadow: 0px 0px 10px #fecac9; */
+  box-shadow: 0px 0px 10px rgba(13, 110, 253, 0.1);
+  border-radius: 20px;
+}
+/* End Business Section */
 
-  /* Inquiry Section */
-  
-  .in__container p,button,h2{
-    color:#111220;
-  }
-  /* End Inquiry Section */
+/* Inquiry Section */
 
-  /* Footer Section */
-  .footer{
-    background-color:#fafafa;
-    padding:2rem;
-  }
-  .footer__container{
-    justify-content:center;
-    display:flex;
-    flex-direction:col;
-  }
-  .footer__nav-link{
-    margin-top:10px;
-    color:#111220;
-    font-weight:400;
-    text-decoration:none;
-  }
-  .footer__nav-link:hover{
-    color:#111220 !important;
-  }
-  .footer__email{
-    margin-top:10px;
-    color:#fb3d36;
-    font-weight:800;
-    text-decoration:none;
-  }
-  .footer__email:hover{
-    color:#fb3d36 !important;
-  }
-  .footer__nav-div{
-    margin-top:10px;
-    color:#111220;
-    margin-left:1rem;
-    margin-right:1rem;
-  }
-  .footer__container{
-    justify-content:center;
-    display:flex;
-    flex-direction:col;
-  }
-  .footer__rights{
-    font-weight: 200;
-    color:#111220;
-  }
-  /* End Footer Section */
+.in__container p,
+button,
+h2 {
+  color: #111220;
+}
+/* End Inquiry Section */
+
+/* Footer Section */
+.footer {
+  background-color: #fafafa;
+  padding: 2rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__nav-link {
+  margin-top: 10px;
+  color: #111220;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer__nav-link:hover {
+  color: #111220 !important;
+}
+.footer__email {
+  margin-top: 10px;
+  color: #fb3d36;
+  font-weight: 800;
+  text-decoration: none;
+}
+.footer__email:hover {
+  color: #fb3d36 !important;
+}
+.footer__nav-div {
+  margin-top: 10px;
+  color: #111220;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__rights {
+  font-weight: 200;
+  color: #111220;
+}
+/* End Footer Section */
