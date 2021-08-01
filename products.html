@@ -73,7 +73,7 @@
         <div class="in__container p-5">
             <h2 style='text-align:center;'>Our Products</h2>
             <div class="container-lg m-5">
-                <select class='form-select' id='Selection' style="width:25%; float:left"onchange="selects(this.value)">
+                <select class='form-select' id='Selection' style="width:25%; float:left" onchange="selects(this.value)">
                     <option selected>Select a field of search</option>
                     <option value=0>Product Name</option>
                     <option value=1>Properties</option>
@@ -2135,15 +2135,19 @@
         <!-- Search and Selection Script -->
         <script>
             var selection;
+            var table_count;
+            var col_count;
             function selects(s) {
                 selection = s;
             }
+
+            
             function sort(){
                 var input, filter, tables, trs, tds, s;
                 input = document.getElementById("search");
                 filter = input.value.toLowerCase();
-                var table_count = 14;
-                var col_count = 5;
+                table_count = 21;
+                col_count = 5;
                 tables = new Array(table_count);
                 trs = new Array(table_count);
                 for (var i = 0; i < tables.length; i++){
