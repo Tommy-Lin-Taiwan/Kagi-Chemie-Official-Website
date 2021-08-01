@@ -1,0 +1,128 @@
+/*-- Body Reset --*/
+body {
+  /* overflow-x: make sures that there's no scrolling in the x direction */
+  justify-content: left;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  color: #616971;
+}
+
+/* Nagivation */
+.navbar {
+  height: 80px;
+  display: flex;
+  font-size: 1.15rem;
+}
+.collapse {
+  justify-content: flex-end;
+  /* background-color:blue; */
+}
+.nav-item {
+  margin-right: 10px;
+}
+.nav-link {
+  width: 100%;
+  color: #374c6a !important;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fb3d36 !important;
+}
+/* End Navigation */
+
+/* Send Email Section */
+.email-sec{
+    margin:5rem;
+}
+#mailform {
+  margin: 1rem;
+  background-color: white;
+  width: 40%;
+  margin-left: 30%;
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top:0.75rem;
+  padding-bottom:2rem;
+  border-radius:1.3rem;
+  box-shadow: 0px 8px 5px 10px #374c6a;
+}
+#mailform button{
+    display:absolute;
+    margin-top:1.2rem;
+    margin-left:38%;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+.form__element {
+  width: 50%;
+  justify-content: center;
+}
+.form__element label {
+  font-size: 20px;
+  margin-right: 1rem;
+}
+.form__element input {
+  border-radius: 5px;
+  border: 0.5px solid #fdb1af;
+  width: 100%;
+  height: 50%;
+}
+.row select{
+    border: 0.5px solid #fdb1af;
+}
+.row textarea{
+    border: 0.5px solid #fdb1af;
+}
+/* End Send Email Section */
+
+/* Footer Section */
+.footer {
+  background-color: #fafafa;
+  padding: 2rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__nav-link {
+  margin-top: 10px;
+  color: #111220;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer__nav-link:hover {
+  color: #111220 !important;
+}
+.footer__email {
+  margin-top: 10px;
+  color: #fb3d36;
+  font-weight: 800;
+  text-decoration: none;
+}
+.footer__email:hover {
+  color: #fb3d36 !important;
+}
+.footer__nav-div {
+  margin-top: 10px;
+  color: #111220;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.footer__container {
+  justify-content: center;
+  display: flex;
+  flex-direction: col;
+}
+.footer__rights {
+  font-weight: 200;
+  color: #111220;
+}
+/* End Footer Section */

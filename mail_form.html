@@ -10,11 +10,11 @@
 	<!-- Bootstrap 4.5 CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- Style CSS -->
-	<link rel="stylesheet" href="about.css">
+	<link rel="stylesheet" href="mail_form.css">
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
 	<body>
 
 
@@ -47,27 +47,69 @@
 		</nav>
 		<!-- End Navigation -->
 		
-		<!-- Hero Section -->
-		<div class="hero py-5">
-			<div class="hero__container">
-				<h1 class="banner">About Us</h1>
+
+		<!-- Send Email Section -->
+		<div class="email-sec">
+			<div class="text__container">
+				<h3>How can we help?</h3>
+			</div>
+			
+			<div class="email-sec__container">
+				<form action="https://formsubmit.co/jessicahu1012@gmail.com" id="mailform" method="POST">
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">First name</label>
+							<input type="text" name="first name" required>	
+						</div>
+						<div class="form__element">
+							<label for="fname">Last name</label>
+							<input type="text" name="last name" required>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">Work email</label>
+							<input type="text" name="work email" required>	
+						</div>
+						<div class="form__element">
+							<label for="fname">Job title</label>
+							<input type="text" name="job title" required>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">Phone Number</label>
+							<input type="text" name="work email" required>	
+						</div>
+						<div class="form__element">
+							<label for="fname">Company name</label>
+							<input type="text" name="first name" required>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">Company size</label>
+							<select id="cars" name="cars">
+								<option value="1-19">1-19</option>
+								<option value="20-49">20-49</option>
+								<option value="50-99">50-99</option>
+								<option value="100-250">100-250</option>
+								<option value="251-1500">251-1500</option>
+								<option value="1500+">1500+</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<!-- <div class="forme__element"> -->
+							<textarea name="message" rows="10" cols="30">
+							</textarea>
+						<!-- </div> -->
+					</div>					
+					<button type="submit" class="btn btn-outline-primary">Contact Us</button>
+				</form>
 			</div>
 		</div>
-		<!-- End Hero Section -->
-
-        
-
-		<!-- Paragraph Section -->
-		<div class="in__container py-5 px-5 m-5 text-center" id="introduction">
-				<h2>Introduction to KAGI CHEMIE</h2>
-                <form action="utils\mail.php" method="post">
-                    <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="address" placeholder="Your email address">
-                    <textarea name="description" placeholder="Comments"></textarea>
-                    <button class="btn btn-primary" type="submit">Submit</button>
-                </form>
-            </div>
-		<!-- Paragraph Section -->
+		<!-- End Send Email Section -->
 
 		<!-- Footer Section -->
 		<div class="footer">
