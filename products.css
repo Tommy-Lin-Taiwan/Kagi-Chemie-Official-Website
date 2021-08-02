@@ -55,6 +55,15 @@ body {
 /* End Hero Section*/
 
 /* Table section */
+.th_i {
+  text-align: center;
+  width: 14%;
+}
+
+.btn_height {
+  height: 80px;
+}
+
 .th_1 {
   text-align: center;
   width: 15%;
