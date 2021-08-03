@@ -30,16 +30,31 @@ body {
   height: 3rem;
 }
 .navbar{
+  background-color:rgba(255,255,255,0.7);
   position:absolute;
   right:3rem;
   top:0.4rem;
   font-size: 1.35rem;
   font-weight: 400;
-  /* letter-spacing: 0.1rem; */
+  text-align:right;
   z-index:1;
 }
 .nav-item{
-  padding: .3rem;
+  padding: 0.3rem;
+}
+.nav-item:hover .dropdown-menu {
+  display: inline-flex;
+  flex-direction:column;
+  left:-10px;
+  border:none;
+  outline:none;
+  background-color:transparent;
+  text-align:left;
+  font-size:1.2rem;
+}
+.dropdown-item:hover{
+  background:transparent;
+  color:#fb3d36 !important;
 }
 .nav-link{
   color: #374c6a !important;
