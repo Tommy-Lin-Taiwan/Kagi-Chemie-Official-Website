@@ -1,13 +1,12 @@
 /*-- Body Reset --*/
 body {
-  /* overflow-x: make sures that there's no scrolling in the x direction */
   justify-content: left;
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   color: #616971;
 }
 
-button{
+#red__button{
   border:none;
   background-color:transparent;
   color:rgb(255, 61, 27)!important;
@@ -20,37 +19,34 @@ button{
   margin-top:1rem;
   width:10rem;
 }
-button:hover{
+#red__button:hover{
   border: 2px solid rgb(162, 250,250);;
   box-shadow: inset 10rem 0 0 0 rgb(162, 250, 250);
   color:#374c6a!important;
 }
 
 /* Nagivation */
-.navbar {
-  height: 80px;
-  display: flex;
-  font-size: 1.4rem;
-  font-weight:500;
+.navbar-brand img{
+  height: 3rem;
 }
-.collapse {
-  justify-content: flex-end;
-  /* background-color:blue; */
+.navbar{
+  position:absolute;
+  right:3rem;
+  top:0.4rem;
+  font-size: 1.35rem;
+  font-weight: 400;
+  /* letter-spacing: 0.1rem; */
+  z-index:1;
 }
-.nav-item {
-  margin-right: 10px;
+.nav-item{
+  padding: .3rem;
 }
-.nav-link {
-  width: 100%;
+.nav-link{
   color: #374c6a !important;
 }
-.nav-item:hover .dropdown-menu {
-  display: block;
-}
-
-.nav-link.active,
-.nav-link:hover {
-  color: #fc033d !important;
+.nav-link.active, 
+.nav-link:hover{
+  color: #fb3d36 !important;
 }
 /* End Navigation */
 
