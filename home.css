@@ -17,11 +17,11 @@ body {
   font-size:1.2rem;
   padding:0.5rem;
   margin-top:1rem;
-  width:10rem;
+  width:15rem;
 }
 #red__button:hover{
   border: 2px solid rgb(162, 250,250);;
-  box-shadow: inset 10rem 0 0 0 rgb(162, 250, 250);
+  box-shadow: inset 15rem 0 0 0 rgb(162, 250, 250);
   color:#374c6a!important;
 }
 
@@ -285,11 +285,11 @@ body {
 
 /* Business Section */
 .bus-section {
-  background: rgb(255, 242, 240);
+  background: rgb(255, 236, 241);
   background: linear-gradient(
     90deg,
-    rgba(255, 242, 240, 1) 0%,
-    rgba(244, 253, 253, 1) 100%
+    rgb(255, 236, 241) 0%,
+    rgba(193, 246, 255, 0.876) 100%
   );
 }
 .bus__container {
@@ -297,7 +297,7 @@ body {
   margin-left: 4rem;
   padding: 2rem;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(13, 110, 253, 0.1);
+  box-shadow: 0px 10px 15px 15px rgba(55,76,106, 0.1);
   border-radius: 20px;
 }
 .bus__container h2{
@@ -315,15 +315,38 @@ body {
 }
 /* End Business Section */
 
+/* Image Section I*/
+.img__container_a{
+  background-image: url('source/picture7.png');
+  background-size: 100% auto;
+  height:12rem;
+  box-shadow: inset 0px 0px 20px 10px rgba(55,76,106, 0.2);
+}
+.img__container_b{
+  background-image: url('source/picture7.png');
+  background-size: 100% auto;
+  height:12rem;
+  transform:rotate(180deg);
+  box-shadow: inset 0px 0px 20px 10px rgba(55,76,106, 0.2);
+
+}
+.pro__container{
+  z-index:1;
+  
+}
+/* End Image SectionI */
+
 /* Inquiry Section */
 
-.in__container p{
+.in__container p,
+.pro__container p{
   color:black;
   font-size:1.2rem;
   font-weight:300;
   margin-bottom:1rem;
 }
-.in__container h2{
+.in__container h2,
+.pro__container h2{
   color:#374c6a;
   margin-bottom:1rem;
   word-spacing:2px;
