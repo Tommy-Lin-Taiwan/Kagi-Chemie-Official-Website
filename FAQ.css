@@ -31,7 +31,8 @@ body {
   height: 3rem;
 }
 .navbar {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 35px;
   position: absolute;
   right: 3rem;
   top: 0.4rem;
@@ -44,12 +45,12 @@ body {
   padding: 0.3rem;
 }
 .nav-item:hover .dropdown-menu {
+  background-color: rgba(255, 255, 255, 1);
   display: inline-flex;
   flex-direction: column;
   left: -10px;
   border: none;
   outline: none;
-  background-color: transparent;
   text-align: left;
   font-size: 1.2rem;
 }
@@ -65,12 +66,6 @@ body {
   color: #fb3d36 !important;
 }
 /* End Navigation */
-
-.imgInfo {
-  width: 60%;
-  border: 2px solid black;
-  border-radius: 1vw;
-}
 
 /* Footer Section */
 .footer {
