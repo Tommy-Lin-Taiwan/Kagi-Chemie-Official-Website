@@ -300,14 +300,35 @@ body {
   box-shadow: 0px 0px 10px rgba(13, 110, 253, 0.1);
   border-radius: 20px;
 }
+.bus__container h2{
+  color:#374c6a;
+  margin-bottom:1rem;
+  word-spacing:2px;
+  font-weight:400;
+  font-size:2rem;
+}
+.bus__container p{
+  color:black;
+  font-size:1.2rem;
+  font-weight:300;
+  margin-bottom:1rem;
+}
 /* End Business Section */
 
 /* Inquiry Section */
 
-.in__container p,
-button,
-h2 {
-  color: #111220;
+.in__container p{
+  color:black;
+  font-size:1.2rem;
+  font-weight:300;
+  margin-bottom:1rem;
+}
+.in__container h2{
+  color:#374c6a;
+  margin-bottom:1rem;
+  word-spacing:2px;
+  font-weight:400;
+  font-size:2rem;
 }
 /* End Inquiry Section */
 
