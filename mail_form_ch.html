@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Kagi Chemie</title></titl></title>
+	<link rel="shortcut icon" href="source/trademark_bw.png">
+	<!-- icon that shows on broswer page, best <80px -->
+	<!-- Bootstrap 4.5 CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="mail_form.css">
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap" rel="stylesheet">
+	<body>
+
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-light navbar-expand-lg">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="home_ch.html" class="nav-link">首頁</a></li>
+						<!-- <li class="nav-item"><a href="about.html" class="nav-link">About</a></li> -->
+						<li class="nav-item dropdown">
+                            <a href="about_ch.html" data-bs-toggle="dropdown" class="nav-link dropdown">關於我們</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="about_ch.html#introduction">介紹</a>
+                                <a class="dropdown-item" href="about_ch.html#coreValues">核心價值</a>
+                                <a class="dropdown-item" href="about_ch.html#History">歷史</a>
+                                <a class="dropdown-item" href="about_ch.html#Sustainability">永續發展</a>
+                            </div>
+						<li class="nav-item"><a href="products_ch.html" class="nav-link">產品介紹</a></li>
+						<li class="nav-item"><a href="contact_ch.html" class="nav-link active">聯絡我們</a></li>
+						<li class="nav-item"><a href="FAQ_ch.html" class="nav-link">常見問題</a></li>
+						<li class="nav-item"><a href="mail_form.html" class="nav-link">ENG</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Navigation Bar -->
+		
+
+		<!-- Send Email Section -->
+		<div class="email-sec">
+			<div class="text__container">
+				<div class="title">
+					<h3>歡迎您來信聯絡!</h3>
+				</div>
+				<div class="paragraph">
+					<p>
+                    非常感謝您來信聯絡! 請留下姓名及電子郵件，我們將盡速回復您。
+					</p>
+				</div>
+				<img src="source/vector1.png" alt="picture">
+			</div>
+			
+			<div class="email-sec__container">
+				<form action="https://formsubmit.co/jessicahu1012@gmail.com" id="mailform" method="POST">
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">名稱</label>
+							<input type="text" name="first name" required>	
+						</div>
+						<div class="form__element">
+							<label for="fname">姓氏</label>
+							<input type="text" name="last name" required>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="form__element">
+							<label for="fname">聯絡信箱</label>
+							<input type="text" name="work email" required>	
+						</div>
+						<!-- <div class="form__element">
+							<label for="fname">Company size</label>
+							<select id="cars" name="cars">
+								<option value="1-19">1-19</option>
+								<option value="20-49">20-49</option>
+								<option value="50-99">50-99</option>
+								<option value="100-250">100-250</option>
+								<option value="251-1500">251-1500</option>
+								<option value="1500+">1500+</option>
+							</select>
+						</div> -->
+					</div>
+					<div class="row">
+						<!-- <div class="forme__element"> -->
+							<textarea name="message" rows="10" cols="30">
+							</textarea>
+						<!-- </div> -->
+					</div>					
+					<button type="submit" id="red__button">寄出信件</button>
+				</form>
+			</div>
+		</div>
+		<!-- End Send Email Section -->
+
+		<!-- Footer Section -->
+		<div class="footer">
+			<div class="footer__container">
+				<a href="home_ch.html" class="footer__nav-link">首頁</a>
+				<p class="footer__nav-div">|</p>
+				<a href="about_ch.html" class="footer__nav-link">關於我們</a>
+				<p class="footer__nav-div">|</p>
+				<a href="products_ch.html" class="footer__nav-link">產品介紹</a>
+				<p class="footer__nav-div">|</p>
+				<a href="contact_ch.html" class="footer__nav-link">聯絡我們</a>
+				<p class="footer__nav-div">|</p>
+				<a href="FAQ_ch.html" class="footer__nav-link">常見問題</a>
+				<p class="footer__nav-div">|</p>
+                <!-- Confirmed: Use mailto: is fine -->
+				<a href="" class="footer__email">example@test.com</a>
+			</div>
+			<div class="footer__container">
+				<p class=footer__rights>&copy Kagi Chemie 2021. All rights reserved</p>
+			</div>
+		</div>
+		<!-- Footer Section End -->
+
+
+		<!-- jQuery -->
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<!-- Bootstrap 4.5 JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Font Awesome -->
+		<script src="js/all.min.js"></script>
+</body>
+</html>
