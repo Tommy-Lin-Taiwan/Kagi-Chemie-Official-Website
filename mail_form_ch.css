@@ -1,0 +1,200 @@
+/*-- Body Reset --*/
+body {
+    /* overflow-x: make sures that there's no scrolling in the x direction */
+    justify-content: left;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    color: #616971;
+  }
+  
+  #red__button {
+    border: none;
+    background-color: transparent;
+    color: rgb(255, 61, 27) !important;
+    border: 2px solid rgb(255, 61, 27);
+    border-radius: 42px;
+    box-shadow: inset 0 0 0 0 rgb(162, 250, 250);
+    transition: ease-out 0.3s;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 10rem;
+  }
+  #red__button:hover {
+    border: 2px solid rgb(162, 250, 250);
+    box-shadow: inset 30rem 0 0 0 rgb(162, 250, 250);
+    color: #374c6a !important;
+  }
+  
+  /* Nagivation */
+  .navbar-brand img {
+    height: 3rem;
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 35px;
+    position: absolute;
+    right: 3rem;
+    top: 0.4rem;
+    font-size: 1.35rem;
+    font-weight: 400;
+    text-align: right;
+    z-index: 1;
+  }
+  .nav-item {
+    padding: 0.3rem;
+  }
+  .nav-item:hover .dropdown-menu {
+    background-color: rgba(255, 255, 255, 1);
+    display: inline-flex;
+    flex-direction: column;
+    left: -10px;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .dropdown-item:hover {
+    background: transparent;
+    color: #fb3d36 !important;
+  }
+  .nav-link {
+    color: #374c6a !important;
+  }
+  .nav-link.active,
+  .nav-link:hover {
+    color: #fb3d36 !important;
+  }
+  /* End Navigation */
+  
+  /* Send Email Section */
+  .email-sec{
+      padding-top:4rem;
+      padding-bottom:3rem;
+      display:flex;
+  }
+  .text__container{
+      width:50%;
+      text-align:center;
+      align-items:center;
+      padding-right:2%;
+      padding-left:2%;
+      padding-top:3%;
+      margin:1%;
+  }
+  .title{
+      color:#fb3d36;
+      margin:1rem;
+  }
+  .paragraph{
+      font-size:20px;
+      margin-bottom:5rem;
+  }
+  .text__container img{
+      width:100%;
+  }
+  .email-sec__container{
+      margin:1%;
+      padding:5%;
+  }
+  #mailform {
+    background-color: white;
+    margin-right:5%;
+    margin-left:5%;
+    padding:7.5%;
+    border:solid;
+    border-color:#2599ae;
+    border-width:1px;
+    border-radius:1.5rem;
+    box-shadow: 0px 15px 10px 10px #d6f6f6;
+    justify-content:center;
+    min-width:300px;
+  }
+  #mailform button{
+      width:100%;
+      margin-top:1.2rem;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+  }
+  .form__element {
+    width: 50%;
+    justify-content: center;
+  }
+  .form__element label {
+    font-size: 20px;
+    margin-right: 1rem;
+  }
+  .form__element input {
+    border-radius: 5px;
+    border: 1.5px solid  #2599ae;
+    width: 100%;
+    height: 50%;
+    max-height:40px;
+  }
+  .row textarea{
+    border-radius:1rem;
+    border: 1.5px solid #2599ae;
+    margin:1rem;
+    max-height:10rem;
+  }
+  @media only screen and (max-width: 1095px){
+    .email-sec{
+      flex-direction:column;
+      padding-left:5%!important;
+      padding-right:5%!important;
+    }
+    .text__container{
+      width:100%;
+      margin-bottom:3rem;
+    }
+  }
+  /* End Send Email Section */
+  
+  /* Footer Section */
+  .footer {
+    background-color: #fafafa;
+    padding: 2rem;
+  }
+  .footer__container {
+    justify-content: center;
+    display: flex;
+    flex-direction: col;
+  }
+  .footer__nav-link {
+    margin-top: 10px;
+    color: #111220;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .footer__nav-link:hover {
+    color: #111220 !important;
+  }
+  .footer__email {
+    margin-top: 10px;
+    color: #fb3d36;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .footer__email:hover {
+    color: #fb3d36 !important;
+  }
+  .footer__nav-div {
+    margin-top: 10px;
+    color: #111220;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .footer__container {
+    justify-content: center;
+    display: flex;
+    flex-direction: col;
+  }
+  .footer__rights {
+    font-weight: 200;
+    color: #111220;
+  }
+  /* End Footer Section */
+  
