@@ -7,7 +7,6 @@ body {
   color: #616971;
 }
 
-
 #red__button {
   border: none;
   background-color: transparent;
@@ -106,6 +105,10 @@ body {
   /* box-shadow: 0px 0px 10px #fecac9; */
   box-shadow: 0px 0px 10px rgba(13, 110, 253, 0.1);
   border-radius: 20px;
+}
+
+.intros {
+  width: 80%;
 }
 /* End Business Section */
 
