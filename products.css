@@ -12,17 +12,18 @@ body {
   background-color: transparent;
   color: rgb(255, 61, 27) !important;
   border: 2px solid rgb(255, 61, 27);
-  border-radius: 42px;
+  border-radius: 24px;
   box-shadow: inset 0 0 0 0 rgb(162, 250, 250);
   transition: ease-out 0.3s;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   padding: 0.5rem;
   margin-top: 1rem;
-  width: 10rem;
+  width: 10vw;
+  height: 100px;
 }
 #red__button:hover {
   border: 2px solid rgb(162, 250, 250);
-  box-shadow: inset 10rem 0 0 0 rgb(162, 250, 250);
+  box-shadow: inset 10vw 0 0 0 rgb(162, 250, 250);
   color: #374c6a !important;
 }
 
@@ -69,7 +70,7 @@ body {
 
 /* Hero Section */
 .hero {
-  margin-top:6rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   background-color: #fff;

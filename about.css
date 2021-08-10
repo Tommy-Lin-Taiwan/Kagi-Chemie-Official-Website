@@ -18,11 +18,11 @@ body {
   font-size: 1.2rem;
   padding: 0.5rem;
   margin-top: 1rem;
-  width: 10rem;
+  width: 12rem;
 }
 #red__button:hover {
   border: 2px solid rgb(162, 250, 250);
-  box-shadow: inset 10rem 0 0 0 rgb(162, 250, 250);
+  box-shadow: inset 12rem 0 0 0 rgb(162, 250, 250);
   color: #374c6a !important;
 }
 
@@ -69,7 +69,7 @@ body {
 
 /* Hero Section */
 .hero {
-  margin-top:6rem;
+  margin-top: 6rem;
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -109,6 +109,17 @@ body {
 
 .intros {
   width: 80%;
+}
+
+.core_value {
+  margin-top: 20px;
+  padding: 2rem;
+  border: 2px solid purple;
+  border-radius: 10px;
+}
+
+.core_value_main {
+  text-align: center;
 }
 /* End Business Section */
 
