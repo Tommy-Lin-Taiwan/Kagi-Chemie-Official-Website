@@ -303,6 +303,7 @@ body {
   /* padding:1rem; */
 }
 .core_value {
+  
   margin: 3rem;
   padding: 2rem;
   z-index:100;
@@ -340,12 +341,23 @@ body {
 
 /* End Business Section */
 #Guarantees{
-  background-color:rgb(245, 245 245);
+  background-color:red;
+  /* border-radius:3rem; */
+  margin:5rem;
+  padding:0rem;
   display:flex;
 }
-#Guarantees img{
-  width:40%;
+#Guarantees img:nth-child(1){
+  width:50%;
   height:auto;
+  /* border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem; */
+}
+#Guarantees img:nth-child(2){
+  width:50%;
+  height:auto;
+  /* border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem; */
 }
 #text_box{
   /* background-color:blue; */
