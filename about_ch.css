@@ -131,186 +131,64 @@ body {
 }  
 #coreValues{
   padding:4rem;
-  width:100%;
-  box-shadow: inset 0px 0px 20px 15px rgba(55,76,106, 0.01);
-}
-.hero__bg{
-  position:absolute;
-  width:100%;
-}
-.hero__bg-deco:nth-child(1){  
-  position:absolute;
-  z-index:0;
-  top:-100px;
-  left:-200px;
-  width:400px;
-  height:400px;
-  background-color:rgb(203, 248, 241);
-  box-shadow: inset 10px 10px 30px 40px rgba(255, 255, 255, 0.5),
-  20px 20px 40px 30px rgba(14, 46, 87, 0.2), 
-  -12px -12px 20px 15px rgb(255, 255, 255),
-  inset -12px -12px 30px 30px rgba(17, 204, 179, 0.164);
-  border-radius:30% 70% 70% 30% / 34% 31% 69% 66%; 
-}
-.hero__bg-lta{
-  background-color:rgba(255,255,255,0.7);
+  /* margin:2rem; */
   position:relative;
-  z-index:2;
-  top:310px;
-  left:220px;
-  width:30px;
-  height:30px;
-  border-radius:40% 60% 61% 39% / 40% 66% 34% 60%  ;
+  background-color:rgb(255, 255, 255);
+  width:100%;
+  height:100%;
+  box-shadow: inset 0px 0px 20px 15px rgba(55,76,106, 0.05);
 }
-.hero__bg-ltb{
-  background-color:rgba(255,255,255,0.5);
-  position:relative;
-  z-index:2;
-  top:270px;
-  left:150px;
-  width:60px;
-  height:60px;
-  border-radius:65% 35% 43% 57% / 42% 31% 69% 58% ;
-}
-.hero__bg-deco:nth-child(2){
-  background-color:rgb(251, 243, 244);
-  box-shadow: inset 20px 12px 40px 40px rgba(251, 167, 167, 0.2),
-  25px 30px 30px 4px rgba(54, 14, 87, 0.2), 
-  -12px -40px 20px 15px rgb(255, 255, 255, 0.5),
-  inset -12px -12px 30px 20px rgb(255, 255, 255,0.3);
-  position:absolute;
-  top:400px;
-  left:-20px;
-  width:250px;
-  height:250px;
-  border-radius:25% 75% 46% 54% / 25% 55% 45% 75% ;
-}
-.hero__bg-deco:nth-child(3){
-  background-color:rgb(255, 247, 248);
-  box-shadow: inset 12px 12px 40px 30px rgba(253, 179, 179, 0.2),
-  20px 20px 30px 4px rgba(54, 14, 87, 0.2), 
-  -12px -12px 20px 15px rgb(255, 255, 255,0.5),
-  inset -12px -12px 20px 20px rgb(255, 255, 255,0.4);
-  position:absolute;
-  top:100px;
-  left:250px;
-  width:200px;
-  height:200px;
-  border-radius:41% 59% 81% 19% / 75% 55% 45% 25%   ;
-}
-.hero__bg-ltc{
-  background-color:white;
-  position:absolute;
-  top:160px;
-  left:20px;
-  width:20px;
-  height:20px;
-  border-radius:65% 35% 43% 57% / 42% 31% 69% 58% ;
-}
-.hero__bg-deco:nth-child(4){
-  z-index:0;
-  background-color:rgb(209, 246, 240);
-  box-shadow: inset 12px 12px 40px rgba(163, 225, 253, 0.1),
-  8px 5px 20px 8px rgba(14, 46, 87, 0.1), 
-  -5px -8px 20px 15px rgb(255, 255, 255),
-  inset -12px -12px 30px 30px rgb(244, 250, 251);
-  position:absolute;
-  top:350px;
-  right:0%;
-  width:100px;
-  height:100px;
-  border-radius:24% 76% 51% 49% / 26% 37% 63% 74% ;
-}
-.hero__bg-ltd{
-  z-index:0;
-  background-color:white;
-  position:absolute;
-  top:20px;
-  left:10px;
-  width:14px;
-  height:14px;
-  border-radius:76% 24% 59% 41% / 43% 29% 71% 57% ;
-}
-.hero__bg-deco:nth-child(5){
- background-color:rgb(214, 246, 244);
-  box-shadow: inset 12px 12px 40px rgba(180, 246, 251, 0.3),
-  20px 20px 30px 4px rgba(54, 14, 87, 0.25), 
-  -12px -12px 20px 15px rgb(255, 255, 255, 0.01),
-  inset -12px -12px 20px 20px rgb(255, 255, 255,0.1);
-  border-radius:30% 70% 70% 30% / 34% 31% 69% 66%;
-  position:absolute;
-  top:400px;
-  right:10%;
-  width:180px;
-  height:150px;
-  transform:rotate(-10deg);
-  border-radius:86% 14% 46% 54% / 60% 20% 80% 40%   ;
-}
-.hero__bg-deco:nth-child(6){
-  background-color:rgb(251, 238, 240);
-  box-shadow: inset 12px 12px 40px rgb(251, 180, 180,0.3),
-  20px 20px 30px 4px rgba(54, 14, 87, 0.25), 
-  -12px -12px 20px 15px rgb(255, 255, 255),
-  inset -12px -12px 20px 20px rgb(255, 255, 255);
-  position:absolute;
-  top:550px;
-  right:-5%;
-  width:270px;
-  height:270px;
-  border-radius:24% 76% 51% 49% / 26% 37% 63% 74% ;
-}
-.hero__bg-lte{
-  background-color:white;
-  position:absolute;
-  top:40px;
-  left:15px;
-  width:30px;
-  /* z-index:2; */
-  height:30px;
-  border-radius:38% 62% 43% 57% / 42% 54% 46% 58% ;
-}
-.hero__bg-ltf{
-  background-color:white;
-  position:absolute;
-  width:20px;
-  left:30px;
-  top:15px;
-  /* z-index:2; */
-  height:20px;
-  border-radius:26% 74% 19% 81% / 53% 61% 39% 47% ;
-}
-.hero__content{
-  padding:2rem;
-  position:absolute;
-  top:30%;
-  right:15%;
-  left:15%;
-  width:70%;
-  text-align:left;
-}
-.hero__content h1{
+#coreValues h2{
   color:#374c6a;
-  margin-bottom:1rem;
-  word-spacing:20px;
-  font-weight:400;
-  font-size:5rem;
+  font-weight:600;
+}
+.core_value h3{
+  color:#374c6a;
+  font-weight:500;
+}
+.color{
+  filter:blur(100px);
+  z-index:0;
+}
+
+.color:nth-child(1){
+  position:absolute;
+  background-color:rgb(137, 255, 245);
+  left:5%;
+  top:20%;
+  width:30%;
+  height:50%;
+}
+.color:nth-child(2){
+  position:absolute;
+  background-color:rgb(255, 253, 141);
+  
+  right:20%;
+  width:55%;
+  height:40%;
+  bottom:10%;
+}
+.color:nth-child(3){
+  position:absolute;
+  background-color:rgb(255, 172, 151);
+  right:15%;
+  width:30%;
+  height:25%;
+  top:10%;
 }
 .core_value_cont{
-  /* background-color:azure; */
   display:flex;
   width:100%;
-  /* background-color:red; */
-  /* padding:1rem; */
 }
 .core_value {
-  
-  margin: 3rem;
+  margin-top:3rem;
+  margin-bottom:1rem;
   padding: 2rem;
   z-index:100;
-  background:rgba(175, 175, 175, 0.05);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  background:rgba(255, 255, 255, 0.3);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
   border-radius:8%;
-  backdrop-filter:blur(20px);
+  backdrop-filter:blur(15px);
   width:90%;
   height:40%;
 }
@@ -340,24 +218,33 @@ body {
 }
 
 /* End Business Section */
+.guarantee__cont{
+  z-index:5;
+  padding:7rem 7rem 5rem 7rem;
+}
 #Guarantees{
-  background-color:red;
-  /* border-radius:3rem; */
-  margin:5rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  height:35rem;
+  margin-bottom:5rem;
   padding:0rem;
   display:flex;
 }
-#Guarantees img:nth-child(1){
+#Guarantees img{
   width:50%;
   height:auto;
-  /* border-top-left-radius: 3rem;
-  border-bottom-left-radius: 3rem; */
 }
-#Guarantees img:nth-child(2){
-  width:50%;
-  height:auto;
-  /* border-top-right-radius: 3rem;
-  border-bottom-right-radius: 3rem; */
+#Guarantees h2{
+  color:#374c6a;
+  font-weight:600;
+  margin-bottom:2rem;
+}
+#Guarantees p{
+  font-size:1.6rem;
+  margin-bottom:1rem;
+}
+#Guarantees ul{
+  font-size:1.5rem;
+  margin-bottom:2rem;
 }
 #text_box{
   /* background-color:blue; */
