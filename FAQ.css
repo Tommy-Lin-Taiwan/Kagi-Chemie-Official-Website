@@ -67,6 +67,35 @@ body {
 }
 /* End Navigation */
 
+/* Content Session */
+.font-1 {
+  font-size: 45px;
+}
+
+.font-2 {
+  font-size: 25px;
+}
+
+.font-3 {
+  font-size: 35px;
+}
+
+.font-important {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline red;
+}
+
+.table-width-1 {
+  width: 30%;
+}
+
+.table-width-2 {
+  width: 70%;
+}
+
+/* End Content */
+
 /* Footer Section */
 .footer {
   background-color: #fafafa;
