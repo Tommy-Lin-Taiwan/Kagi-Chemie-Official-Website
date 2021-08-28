@@ -68,30 +68,54 @@ body {
 /* End Navigation */
 
 /* Content Session */
-.font-1 {
-  font-size: 45px;
+.important-section {
+  margin: 8vw;
+  padding: 8vw;
 }
 
-.font-2 {
-  font-size: 25px;
+.QA-box-1 {
+  padding: 2rem;
+  z-index: 100;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(10, 153, 236, 0.5),
+    rgba(255, 255, 255, 1)
+  );
+  width: 90%;
+  align-items: center !important;
 }
 
-.font-3 {
-  font-size: 35px;
+.QA-box-2 {
+  padding: 2rem;
+  z-index: 100;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(122, 10, 197, 0.5),
+    rgba(255, 255, 255, 1)
+  );
+  width: 90%;
 }
 
-.font-important {
-  color: red;
-  font-weight: bold;
-  text-decoration: underline red;
+.QA-Q {
+  padding: 0 0 2 0px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom: solid 1px grey;
+  width: 50%;
 }
 
-.table-width-1 {
-  width: 30%;
+.QA-A {
+  padding: 2rem;
+  text-align: justify;
+  font-size: 1rem;
+  width: 80%;
 }
 
-.table-width-2 {
-  width: 70%;
+@media screen and (max-width: 768px) {
+  .important-section {
+    padding: 5vw;
+    margin: 5vw;
+  }
 }
 
 /* End Content */
