@@ -81,7 +81,7 @@ body {
 .title{
   /* background-color:peachpuff; */
   text-align:center;
-  color:#fb3d36;
+  color:#fb3d36de;
 }
 .title h1{
   font-size:3rem;
@@ -160,7 +160,9 @@ body {
   width:48%;
 }
 .qa_set h3{
-  color:#477aa7d7;
+  
+  
+  color:#3c67b1a6;
   font-weight:600;
 }
 .qa_set p{
@@ -203,7 +205,7 @@ body {
   margin:2rem 2rem 5rem 2rem;
 }
 .contact_text h2{
-  color:#fb3d36cc;
+  color:#fb3d36a9;
   font-weight:600;
 }
 .contact_text p{
