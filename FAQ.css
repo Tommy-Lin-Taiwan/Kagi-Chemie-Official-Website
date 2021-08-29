@@ -113,7 +113,7 @@ body {
   border-radius:2rem;
 }
 .category:hover{
-  background-color:aliceblue;
+  background-color:rgba(240, 248, 255, 0.3);
 }
 .image{
   /* background-color:pink; */
@@ -160,7 +160,7 @@ body {
   width:48%;
 }
 .qa_set h3{
-  color:#80a7c9;
+  color:#477aa7d7;
   font-weight:600;
 }
 .qa_set p{
