@@ -66,27 +66,32 @@ body {
   }
   /* End Navigation */
   
-  /* Banner Section */
-  .banner {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .top_margin{
+    /* background-color:blue; */
+    height:5.5rem;
   }
-  .banner h3 {
-    margin-top:6rem;
-    margin-bottom: 1rem;
-    color:#374c6a;
-    word-spacing:2px;
-    font-weight:400;
-    font-size:2rem;
+  
+  
+  /* Title */
+  .title_sec_container{
+    /* background-color:red; */
+    padding:2rem;
   }
-  .banner p{
-    color:black;
+  .title{
+    /* background-color:peachpuff; */
+    text-align:center;
+    color:#fb3d36de;
+  }
+  .title h1{
+    font-size:3rem;
+  }
+  .text_box{
+    /* background-color:aqua; */
+    margin: 1rem 5rem 1rem 5rem;
+    text-align:center;
     font-size:1.2rem;
-    font-weight:300;
-    margin-bottom:2.5rem;
   }
-  /* End Banner Section */
+  /* Title End*/
   
   /* to Email Section */
   .toEmail {

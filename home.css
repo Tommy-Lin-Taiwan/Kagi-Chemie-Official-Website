@@ -227,7 +227,7 @@ body {
   text-align:left;
 }
 .hero__content h1{
-  color:#374c6a;
+  color:#374c6adc;
   margin-bottom:1rem;
   word-spacing:20px;
   font-weight:400;
@@ -286,11 +286,16 @@ body {
 
 /* Business Section */
 .bus-section {
-  background: rgb(255, 236, 241);
+  /* background: rgb(255, 236, 241);
   background: linear-gradient(
     90deg,
     rgb(255, 236, 241) 0%,
     rgba(193, 246, 255, 0.876) 100%
+  ); */
+  background: linear-gradient(
+    90deg,
+    rgb(253, 239, 240) 0%,
+    rgba(203, 248, 241, 0.3) 100%
   );
 }
 .bus__container {
@@ -302,10 +307,10 @@ body {
   border-radius: 20px;
 }
 .bus__container h2{
-  color:#374c6a;
+  color:#0c32667c;
   margin-bottom:1rem;
   word-spacing:2px;
-  font-weight:400;
+  font-weight:600;
   font-size:2rem;
 }
 .bus__container p{
@@ -348,10 +353,10 @@ body {
 }
 .in__container h2,
 .pro__container h2{
-  color:#374c6a;
+  color:#0c32667c;
   margin-bottom:1rem;
   word-spacing:2px;
-  font-weight:400;
+  font-weight:600;
   font-size:2rem;
 }
 /* End Inquiry Section */
