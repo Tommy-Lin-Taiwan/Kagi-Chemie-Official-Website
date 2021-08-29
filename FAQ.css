@@ -140,7 +140,7 @@ body {
 }
 .subtitle{
   /* background-color:cornsilk; */
-  margin:3rem 3rem 1rem 3rem;
+  margin:3rem 5rem 1rem 5em;
 }
 .subtitle h2{
   font-size:4rem;
@@ -155,7 +155,7 @@ body {
 }
 .qa_set{
   /* background-color:darkseagreen; */
-  margin:1rem 1rem 1rem;
+  margin:1rem 3rem 1rem 3rem;
   padding:0rem 1rem 1rem 1rem;
   width:48%;
 }
@@ -168,7 +168,7 @@ body {
 }
 @media only screen and (max-width: 800px){
   .subtitle{
-    margin:2rem 1rem 0rem 2rem;
+    margin:2rem 4rem 0rem 4rem;
   }
   .qa_column{
     display:inline;
