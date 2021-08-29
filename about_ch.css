@@ -133,7 +133,7 @@ body {
   padding:4rem;
   /* margin:2rem; */
   position:relative;
-  background-color:rgb(255, 255, 255);
+  background-color:rgba(0, 0, 0, 0);
   width:100%;
   height:100%;
   box-shadow: inset 0px 0px 20px 15px rgba(55,76,106, 0.05);
@@ -153,15 +153,15 @@ body {
 
 .color:nth-child(1){
   position:absolute;
-  background-color:rgb(137, 255, 245);
+  background-color:rgba(0, 255, 234, 0.692);
   left:5%;
   top:20%;
-  width:30%;
+  width:60%;
   height:50%;
 }
 .color:nth-child(2){
   position:absolute;
-  background-color:rgb(255, 253, 141);
+  background-color:rgba(255, 251, 24, 0.486);
   
   right:20%;
   width:55%;
@@ -170,10 +170,10 @@ body {
 }
 .color:nth-child(3){
   position:absolute;
-  background-color:rgb(255, 172, 151);
+  background-color:rgba(0, 255, 34, 0.315);
   right:15%;
   width:30%;
-  height:25%;
+  height:65%;
   top:10%;
 }
 .core_value_cont{
