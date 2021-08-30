@@ -46,6 +46,17 @@ body {
   color: #374c6a !important;
 }
 
+.display-size {
+  display: "";
+}
+
+@media screen and (max-width: 700px) {
+  .display-size {
+    display: none;
+    height: 1px;
+  }
+}
+
 /* Nagivation */
 .navbar-brand img {
   height: 3rem;
@@ -108,6 +119,64 @@ body {
 }
 /* End Hero Section*/
 
+/* Padding and Margin Section */
+.pad-x-1 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.pad-y-1 {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.pad-1 {
+  padding: 5vw;
+}
+
+.mar-1 {
+  margin: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .pad-x-1 {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .pad-y-1 {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .pad-1 {
+    padding: 3vw;
+  }
+
+  .mar-1 {
+    margin: 0%;
+  }
+}
+
+@media screen and(max-width: 414px) {
+  .pad-x-1 {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .pad-y-1 {
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+  }
+
+  .pad-1 {
+    padding: 0%;
+  }
+
+  .mar-1 {
+    margin: 0%;
+  }
+}
 /* Table section */
 .table-padding {
   padding: 5%;
