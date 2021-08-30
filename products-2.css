@@ -50,12 +50,34 @@ body {
   display: "";
 }
 
+.display-size-small {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .display-size {
     display: none;
-    height: 1px;
+  }
+
+  .display-size-small {
+    display: inline-flex;
   }
 }
+
+/* Small Screen Section */
+.list-sm {
+  padding-right: 2vw;
+  padding-top: 2vw;
+}
+
+.list-content-sm {
+  color: rgb(133, 27, 255);
+  font-size: 3vw;
+  font-weight: medium;
+  text-indent: 10px;
+  text-align: left;
+}
+/* End small screen section */
 
 /* Nagivation */
 .navbar-brand img {
