@@ -11,6 +11,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="products-2.css">
+    <!--Complementary JavaScript-->
+    <script src='complementary.js'></script>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2474,6 +2476,26 @@
             
             </div>
         </div>
+
+        <div class='container-md pad-1 display-size-small' style='border: 2px solid red;'>
+            <select class='form-select' id='Selection-2' onchange="selects(this.value)">
+                <option selected>Select a field of search</option>
+                <option value=5>All Fields</option>
+                <option value=0>Product Name</option>
+                <option value=1>Properties</option>
+                <option value=2>Speciality</option>
+                <option value=3>Usage</option>
+                <option value=4>Packaging</option>
+            </select>
+            <input class="form-control md-4" style='width:auto;' id="search-small" onkeyup='sortSmall()' type="text" placeholder="Find a product from below">
+
+            <div class='container' id="title-1">
+                <div class='container'>
+                    <h5>Scourol PK</h5>
+                </div>
+            </div>
+        </div>
+
 		<!-- Paragraph Section -->
 
 		<!-- Footer Section -->
@@ -2507,91 +2529,6 @@
         <script src="js/popper.min.js"></script>
         <!-- Font Awesome -->
         <script src="js/all.min.js"></script>
-        <script>
-            var selection;
-            var table_count;
-            var col_count;
-            function selects(s) {
-                selection = s;
-            }
-
-            function searchBlock(item, display_item, filter) {
-                if (item) {
-                    var txtValue = item.textContent || item.innerText;
-                    if (txtValue.toLowerCase().indexOf(filter) > -1){
-                        display_item.style.display="";
-                    }
-                    else {
-                        display_item.style.display="none";
-                    }
-                }
-            }
-
-            function searchBlockBoolean(item, display_bool, filter) {
-                if (item) {
-                    var txtValue = item.textContent || item.innerText;
-                    if (txtValue.toLowerCase().indexOf(filter) > -1){
-                        return 1;
-                    }
-                    else {
-                        return 0;
-                    }
-                }
-            }
-
-            function sort(){
-                var input, filter, tables, trs, tds, s;
-                input = document.getElementById("search");
-                filter = input.value.toLowerCase();
-                /*Change the table count if anything added*/
-                table_count = 24;
-                col_count = 5;
-                tables = new Array(table_count);
-                trs = new Array(table_count);
-                for (var i = 0; i < tables.length; i++){
-                    s = "table_" + (i+1).toString();
-                    /*console.log(s);*/
-                    tables[i] = document.getElementById(s);
-                    trs[i] = tables[i].getElementsByTagName("tr");
-                    /*if j == 0, the tr inside thead will be considered in the below functions*/
-                    for (var j = 1; j < trs[i].length; j++){
-                        if (selection == 5) {
-                            console.log('success selection');
-                            tds = trs[i][j].getElementsByTagName("td");
-                            bool_count = 0;
-                            for (var k = 0; k < tds.length; k++){
-                                bool_count += searchBlockBoolean(tds[k], trs[i][j], filter);
-                            }
-                            if (bool_count == 0){
-                                trs[i][j].style.display = 'none';
-                            }
-                            else {
-                                trs[i][j].style.display = '';
-                            }
-                        }
-                        else {
-                            tds = trs[i][j].getElementsByTagName("td")[selection];
-                            searchBlock(tds, trs[i][j], filter);
-                        }
-
-                        /*console.log(i,j);*/
-                        /*
-                        tds = trs[i][j].getElementsByTagName("td")[selection];
-                        if (tds) {
-                            var txtValue = tds.textContent || tds.innerText;
-                            if (txtValue.toLowerCase().indexOf(filter) > -1){
-                                trs[i][j].style.display="";
-                            }
-                            else {
-                                trs[i][j].style.display="none";
-                            }
-                        }
-                        */
-                    }
-                }
-                console.log("successful search");
-            }
-        </script>
 
 		<!-- End Script Source Files -->
 </body>

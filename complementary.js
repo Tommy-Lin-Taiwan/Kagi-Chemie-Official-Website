@@ -1,5 +1,7 @@
 /*Usage for products as complementary functions*/ 
 
+console.log('Successfully opened complementary.js');
+
 var selection;
 var table_count;
 var col_count;
@@ -82,4 +84,9 @@ function sort(){
         }
     }
     console.log("successful search");
+}
+
+function sortSmall(){
+    //input id: search-small
+    return null;
 }
