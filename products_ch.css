@@ -2,21 +2,9 @@
 body {
   /* overflow-x: make sures that there's no scrolling in the x direction */
   justify-content: left;
-  /*overflow-x: hidden;*/
+  overflow-x: auto;
   font-family: "Poppins", sans-serif;
   color: #616971;
-}
-
-.font-1 {
-  font-size: 45px;
-}
-
-.font-2 {
-  font-size: 25px;
-}
-
-.font-3 {
-  font-size: 35px;
 }
 
 #red__button {
@@ -27,7 +15,7 @@ body {
   border-radius: 24px;
   box-shadow: inset 0 0 0 0 rgb(162, 250, 250);
   transition: ease-out 0.3s;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   padding: 0.5rem;
   margin-top: 1rem;
   width: 10vw;
@@ -57,6 +45,39 @@ body {
   box-shadow: inset 10vw 0 0 0 rgb(229, 162, 250);
   color: #374c6a !important;
 }
+
+.display-size {
+  display: "";
+}
+
+.display-size-small {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .display-size {
+    display: none;
+  }
+
+  .display-size-small {
+    display: inline-flex;
+  }
+}
+
+/* Small Screen Section */
+.list-sm {
+  padding-right: 2vw;
+  padding-top: 2vw;
+}
+
+.list-content-sm {
+  color: rgb(133, 27, 255);
+  font-size: 3vw;
+  font-weight: medium;
+  text-indent: 10px;
+  text-align: left;
+}
+/* End small screen section */
 
 /* Nagivation */
 .navbar-brand img {
@@ -113,20 +134,143 @@ body {
 }
 .banner {
   justify-content: center;
-  font-size: 50px;
+  font-size: 6.5vw;
   word-spacing: 20px;
   font-weight: 800;
   color: #fb3d36;
 }
+
+@media screen and (min-width: 800px) {
+  .banner {
+    justify-content: center;
+    font-size: 50px;
+    word-spacing: 20px;
+    font-weight: 800;
+    color: #fb3d36;
+  }
+}
 /* End Hero Section*/
 
+/* Main Content Section */
+.topic-size {
+  font-size: 4vw;
+}
+.main-size {
+  font-size: 0.8vw;
+}
+
+@media screen and (min-width: 800px) {
+  .topic-size {
+    font-size: 40px;
+  }
+  .main-size {
+    font-size: 25px;
+  }
+}
+/* End Main Content Section */
+
+/* Padding and Margin Section */
+.pad-x-1 {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.pad-y-1 {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.pad-1 {
+  padding: 5vw;
+}
+
+.mar-1 {
+  margin: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .pad-x-1 {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
+  .pad-y-1 {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+
+  .pad-1 {
+    padding: 3vw;
+  }
+
+  .mar-1 {
+    margin: 0%;
+  }
+}
+
+@media screen and(max-width: 414px) {
+  .pad-x-1 {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .pad-y-1 {
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+  }
+
+  .pad-1 {
+    padding: 0%;
+  }
+
+  .mar-1 {
+    margin: 0%;
+  }
+}
+
+/*End Padding And Margin Session*/
+
 /* Table section */
+
+/*responsive width*/
+.table-width {
+  min-width: auto;
+}
+@media screen and (max-width: 500px) {
+  .table-width {
+    width: min-content;
+  }
+}
+
 .table-padding {
   padding: 5%;
 }
 
 .p-1 {
-  text-align: justify;
+  text-align: center;
+}
+
+.p-size {
+  font-size: 0.2vw;
+}
+
+.indents-topic {
+  text-indent: 0px;
+}
+
+@media screen and (min-width: 750px) {
+  .p-size {
+    font-size: 1vw;
+  }
+  .indents-topic {
+    text-indent: 3vw;
+  }
+}
+/*change it to p-1 full width justify if necessary*/
+@media screen and (max-width: 1400px) {
+  .p-1 {
+    text-align: justify;
+  }
 }
 
 .th_i {
@@ -140,22 +284,9 @@ body {
 }
 
 @media screen and (max-width: 1026px) and (min-width: 600px) {
-  .font-1 {
-    font-size: 40px;
-  }
-
-  .font-2 {
-    font-size: 20px;
-  }
-
-  .font-3 {
-    font-size: 30px;
-  }
-
   .table-padding {
     padding: 5% 0%;
   }
-
   #red__button {
     border: none;
     background-color: transparent;
@@ -164,7 +295,7 @@ body {
     border-radius: 24px;
     box-shadow: inset 0 0 0 0 rgb(162, 250, 250);
     transition: ease-out 0.3s;
-    font-size: 1rem;
+    font-size: 0.5rem;
     padding: 0%;
     margin-top: 1rem;
     width: 12vw;
@@ -178,18 +309,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .font-1 {
-    font-size: 35px;
-  }
-
-  .font-2 {
-    font-size: 15px;
-  }
-
-  .font-3 {
-    font-size: 25px;
-  }
-
   .table-padding {
     padding: 5% 0%;
   }
@@ -202,7 +321,7 @@ body {
     border-radius: 24px;
     box-shadow: inset 0 0 0 0 rgb(162, 250, 250);
     transition: ease-out 0.3s;
-    font-size: 0.5rem;
+    font-size: 1px;
     padding: 0%;
     margin-top: 0rem;
     width: 12vw;
@@ -218,6 +337,21 @@ body {
 .btn_sized {
   height: 80px;
   width: 10vw;
+}
+
+.top-href {
+  float: left;
+  font-size: 0.2vw;
+}
+
+.top-href-display {
+  display: flex;
+}
+
+@media screen and (min-width: 1000px) {
+  .top-href-display {
+    display: none;
+  }
 }
 
 .th_1 {
@@ -278,7 +412,9 @@ h2 {
 /* Footer Section */
 .footer {
   background-color: #fafafa;
-  padding: 2rem;
+  padding: 2vw;
+  font-size: 1vw;
+  align-items: center;
 }
 .footer__container {
   justify-content: center;
@@ -306,8 +442,8 @@ h2 {
 .footer__nav-div {
   margin-top: 10px;
   color: #111220;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 .footer__container {
   justify-content: center;

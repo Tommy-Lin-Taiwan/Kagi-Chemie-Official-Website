@@ -2,7 +2,7 @@
 body {
   /* overflow-x: make sures that there's no scrolling in the x direction */
   justify-content: left;
-  overflow-x: hidden;
+  overflow-x: auto;
   font-family: "Poppins", sans-serif;
   color: #616971;
 }

@@ -11,6 +11,8 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="products_ch.css">
+    <!--Complementary JavaScript-->
+    <script src='complementary.js'></script>
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +50,7 @@
 		<!-- End Navigation Bar -->
 		
 		<!-- Hero Section -->
-		<div class="hero py-5">
+		<div class="hero pad-y-1">
 			<div class="hero__container">
 				<h1 class="banner">我們的產品</h1>
 			</div>
@@ -57,22 +59,25 @@
 
 
 		<!-- Paragraph Section -->
-		<div class="in__container py-5 px-5 text-center">
-				<h1 class='font-1'>關於我們的產品</h1>
-                <div class="container-lg p-5">
+		<div class="in__container pad-1 text-center">
+				<h1 class='topic-size'>關於我們的產品</h1>
+                <div class="container-lg pad-1">
+                    <!--
                     <img class='img-fluid' src='source\trademark.png' alt="Our products">
-                    <p class='font-2' style='text-align:justify;'>
+                    -->
+                    <p class='main-size' style='text-align:justify;'>
                         甲基化工致力於生產所有您可能用到的高品質產品，從精煉劑到抗菌劑都能在這裡找到高品質的商品! 除了上述的產品以外，我們也銷售機能性藥劑，如芳香劑，防蚊，速冷/熱，防電磁波/紅外線及美白瘦身等等的各式藥劑! 在下方的產品欄中點選或尋找您需要的產品，並別忘記和我們連繫取得更多資訊!
                     </p> 
                 </div>
 		</div>
-        <div class="in__container p-5">
-            <h1 class='font-1' style='text-align:center;'>產品</h1>
-            <div class="container-lg p-5">
-                <p class='p-1 font-2'><strong>找不到令您滿意的產品?</strong> <a href='contact_ch.html'>聯繫我們</a>並讓我們滿足您的需求! 甲基化工接受客製化需求，並可以為您的生意量身訂製並研發藥劑! </p>
+
+        <div class="in__container pad-1">
+            <h1 id='top' class='topic-size' style='text-align:center;'>產品</h1>
+            <div class="container-lg pad-1">
+                <p class='main-size'><strong>找不到令您滿意的產品?</strong> <a href='contact_ch.html'>聯繫我們</a>並讓我們滿足您的需求! 甲基化工接受客製化需求，並可以為您的生意量身訂製並研發藥劑! </p>
                 <div class="container-md table-padding">
-                    <h3 class='font-3'>前處理及染色加工藥劑</h3>
-                    <table class='table table-responsive table-borderless'>
+                    <h3 class='topic-size'>前處理及染色加工藥劑</h3>
+                    <table class='table table-responsive table-borderless display-size'>
                         <thead>
                             <tr>
                                 <th scope='col' class='th-2'>
@@ -125,9 +130,28 @@
                                 </td>
                             </tr>
                         </tbody>
-                    </table><br>
-                    <h3 class='font-3'>後處理加工藥劑</h3>
-                    <table class='table table-responsive table-borderless'>
+                    </table><br class='display-size'>
+                    <!--If media screen smaller than 700px-->
+                    <div class='container display-size-small'>
+                        <ul class='list-sm'>
+                            <li class='list-content-sm'><a href='#title_1'>精煉劑</a></li>
+                            <li class='list-content-sm'><a href='#title_2'>滲透劑</a></li>
+                            <li class='list-content-sm'><a href='#title_3'>螯合分散劑</a></li>
+                            <li class='list-content-sm'><a href='#title_4'>剝除劑</a></li>
+                            <li class='list-content-sm'><a href='#title_5'>消泡劑</a></li>
+                            <li class='list-content-sm'><a href='#title_6'>靜電防止劑</a></li>
+                            <li class='list-content-sm'><a href='#title_7'>沉澱防止劑</a></li>
+                            <li class='list-content-sm'><a href='#title_8'>汙染防止劑</a></li>
+                            <li class='list-content-sm'><a href='#title_9'>PH調整劑</a></li>
+                            <li class='list-content-sm'><a href='#title_10'>導染劑</a></li>
+                            <li class='list-content-sm'><a href='#title_11'>均染劑</a></li>
+                            <li class='list-content-sm'><a href='#title_12'>移行防止劑</a></li>
+                            <li class='list-content-sm'><a href='#title_13'>浴中柔軟劑</a></li>
+                            <li class='list-content-sm'><a href='#title_14'>固色劑</a></li>
+                        </ul>
+                    </div>
+                    <h3 class='topic-size'>後處理加工藥劑</h3>
+                    <table class='table table-responsive table-borderless display-size'>
                         <thead>
                             <tr>
                                 <th scope='col' class='th-2'>
@@ -167,103 +191,25 @@
                             </tr>
                         </tbody>
                     </table>
-                    <!--
-                    <table class='table table-responsive table-borderless'>
-                        <thead>
-                            <tr>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_1"'>精煉劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_2"'>滲透劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_3"'>螯合分散劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_4"'>剝除劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_5"'>消泡劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_6"'>靜電防止劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_7"'>沉澱防止劑</button>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_8"'>汙染防止劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_9"'>PH調整劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_10"'>導染劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_11"'>均染劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_12"'>移行防止劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_13"'>浴中柔軟劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_14"'>固色劑</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table><br>
-                    <h3>後整理加工藥劑</h3>
-                    <table class='table table-responsive table-borderless'>
-                        <thead>
-                            <tr>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_15"'>柔軟劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_16"'>起毛劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_17"'>增硬劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_18"'>牢度增進劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_19"'>觸媒劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_20"'>吸濕排汗劑</button>
-                                </th>
-                                <th scope='col' class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_21"'>撥水撥油劑</button>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_22"'>阻燃劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_23"'>紫外線吸收劑</button>
-                                </td>
-                                <td class='th_i'>
-                                    <button id='red__button' class='btn btn-primary btn-outline' onclick='location.href="#title_24"'>抗菌劑</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>-->
+                    <!--if screen width < 700px-->
+                    <div class='container display-size-small'>
+                        <ul class='list-sm'>
+                            <li class='list-content-sm'><a href='#title_15'>柔軟劑</a></li>
+                            <li class='list-content-sm'><a href='#title_16'>起毛劑</a></li>
+                            <li class='list-content-sm'><a href='#title_17'>增硬劑</a></li>
+                            <li class='list-content-sm'><a href='#title_18'>牢度增進劑</a></li>
+                            <li class='list-content-sm'><a href='#title_19'>觸媒劑</a></li>
+                            <li class='list-content-sm'><a href='#title_20'>吸濕排汗劑</a></li>
+                            <li class='list-content-sm'><a href='#title_21'>撥水撥油劑</a></li>
+                            <li class='list-content-sm'><a href='#title_22'>阻燃劑</a></li>
+                            <li class='list-content-sm'><a href='#title_23'>紫外線吸收劑</a></li>
+                            <li class='list-content-sm'><a href='#title_24'>抗菌劑</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="container-lg m-5">
+
+            <div class="container-lg mar-1">
                 <select class='form-select' id='Selection' style="width:25%; float:left" onchange="selects(this.value)">
                     <option selected>請選擇一個領域</option>
                     <option value=5>完整搜尋</option>
@@ -273,12 +219,11 @@
                     <option value=3>產品用途</option>
                     <option value=4>產品包裝</option>
                 </select>
-                <input class="form-control md-4" style="width:75%;" id="search" onkeyup='sort()' type="text" placeholder="輸入產品">
+                <input class="form-control md-4" style="width:75%; float:right;" id="search" onkeyup='sort()' type="text" placeholder="輸入產品">
                 
-
                 <!--Table 1: scourol class-->
-                <br><h3 style='text-indent:3vw;' id='title_1'>精煉劑</h3>
-                <table id="table_1" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_1'>精煉劑</h3>
+                <table id="table_1" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -412,10 +357,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 2: wetting class-->
-                <br><h3 style='text-indent:3vw;' id='title_2'>滲透劑</h3>
-                <table id="table_2" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_2'>滲透劑</h3>
+                <table id="table_2" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -485,10 +431,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 3: chelated class-->
-                <br><h3 style='text-indent:3vw;' id='title_3'>螯合分散劑</h3>
-                <table id="table_3" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_3'>螯合分散劑</h3>
+                <table id="table_3" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -530,10 +477,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 4: stripping class-->
-                <br><h3 style='text-indent:3vw;' id='title_4'>剝除劑</h3>
-                <table id="table_4" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_4'>剝除劑</h3>
+                <table id="table_4" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -575,10 +523,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 5: defoaming class-->
-                <br><h3 style='text-indent:3vw;' id='title_5'>消泡劑</h3>
-                <table id="table_5" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_5'>消泡劑</h3>
+                <table id="table_5" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -683,10 +632,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 6: antistatic class-->
-                <br><h3 style='text-indent:3vw;' id='title_6'>靜電防止劑</h3>
-                <table id="table_6" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_6'>靜電防止劑</h3>
+                <table id="table_6" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -726,10 +676,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 7: suspending class-->
-                <br><h3 style='text-indent:3vw;' id='title_7'>沉澱防止劑</h3>
-                <table id="table_7" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_7'>沉澱防止劑</h3>
+                <table id="table_7" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -771,10 +722,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 8: resisting class-->
-                <br><h3 style='text-indent:3vw;' id='title_8'>污染防止劑</h3>
-                <table id="table_8" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_8'>污染防止劑</h3>
+                <table id="table_8" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -815,10 +767,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 9: PH controlling class-->
-                <br><h3 style='text-indent:3vw;' id='title_9'>PH調整劑</h3>
-                <table id="table_9" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_9'>PH調整劑</h3>
+                <table id="table_9" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -908,10 +861,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 10: carrier class-->
-                <br><h3 style='text-indent:3vw;' id='title_10'>導染劑</h3>
-                <table id="table_10" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_10'>導染劑</h3>
+                <table id="table_10" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -983,10 +937,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 11: levelling class-->
-                <br><h3 style='text-indent:3vw;' id='title_11'>均染劑</h3>
-                <table id="table_11" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_11'>均染劑</h3>
+                <table id="table_11" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1155,10 +1110,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 12: antimigrating class-->
-                <br><h3 style='text-indent:3vw;' id='title_12'>移行防止劑</h3>
-                <table id="table_12" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_12'>移行防止劑</h3>
+                <table id="table_12" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1230,10 +1186,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 13: dyebath class-->
-                <br><h3 style='text-indent:3vw;' id='title_13'>浴中柔軟劑</h3>
-                <table id="table_13" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_13'>浴中柔軟劑</h3>
+                <table id="table_13" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1335,10 +1292,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 14: fixing class-->
-                <br><h3 style='text-indent:3vw;' id='title_14'>固色劑</h3>
-                <table id="table_14" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_14'>固色劑</h3>
+                <table id="table_14" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1411,11 +1369,12 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
 
                 <!--Table 15: Softening class-->
-                <br><h3 style='text-indent:3vw;' id='title_15'>柔軟劑</h3>
-                <table id="table_15" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_15'>柔軟劑</h3>
+                <table id="table_15" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1633,10 +1592,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 16: raising class-->
-                <br><h3 style='text-indent:3vw;' id='title_16'>起毛劑</h3>
-                <table id="table_16" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_16'>起毛劑</h3>
+                <table id="table_16" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1800,10 +1760,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 17: Hardening class-->
-                <br><h3 style='text-indent:3vw;' id='title_17'>增硬劑</h3>
-                <table id="table_17" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_17'>增硬劑</h3>
+                <table id="table_17" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1875,10 +1836,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 18: Fastness Accelerators class-->
-                <br><h3 style='text-indent:3vw;' id='title_18'>牢度增進劑</h3>
-                <table id="table_18" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_18'>牢度增進劑</h3>
+                <table id="table_18" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -1969,6 +1931,7 @@
                                 <ul>
                                     <li>須搭配本公司觸媒TE使用，比例2:1至6:1</li>
                                     <button id='red__button_info' class='btn btn-outline btn-primary' onclick='location.href="#Catalyst_TE"'>觸媒 TE</button>
+                                    <li class='display-size-small'><a href='#Catalyst_TE'>觸媒TE</a></li>
                                 </ul>
                             </td>
                             <td class='forms' style="text-align:center;">
@@ -2006,10 +1969,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 19: Catalyst class-->
-                <br><h3 style='text-indent:3vw;' id='title_19'>觸媒劑</h3>
-                <table id="table_19" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_19'>觸媒劑</h3>
+                <table id="table_19" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2044,6 +2008,8 @@
                                     <li>WP42及TF專用之速效型觸媒</li>
                                     <button id='red__button_info' class='btn btn-outline btn-primary' onclick="location.href='#TF'">TF</button><br>
                                     <button id='red__button_info' class='btn btn-outline btn-primary' onclick="location.href='#WP42'">WP 42</button>
+                                    <li class='display-size-small'><a href='#TF'>TF</a></li>
+                                    <li class='display-size-small'><a href='#WP42'>WP 42</a></li>
 
                                 </ul>
                             </td>
@@ -2053,10 +2019,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 20: Moisturewick class-->
-                <br><h3 style='text-indent:3vw;' id='title_20'>吸濕排汗劑</h3>
-                <table id="table_20" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_20'>吸濕排汗劑</h3>
+                <table id="table_20" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2100,10 +2067,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 21: Repeling class-->
-                <br><h3 style='text-indent:3vw;' id='title_21'>撥水撥油劑</h3>
-                <table id="table_21" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_21'>撥水撥油劑</h3>
+                <table id="table_21" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2230,6 +2198,7 @@
                                     <li>短纖及其混紡織物專用</li>
                                     <li>須搭配本公司觸媒TE使用，使用比例2:1-6:1</li>
                                     <button id='red__button_info' class='btn btn-outline btn-primary' onclick='location.href="#Catalyst_TE"'>觸媒 TE</button>
+                                    <li class='display-size-small'><a href='#Catalyst_TE'>觸媒 TE</a></li>
                                 </ul>
                             </td>
                             <td class='forms' style="text-align:center;">
@@ -2238,11 +2207,11 @@
                         </tr>
                     </tbody>
                 </table>
-
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 22: Antiflaming class-->
-                <br><h3 style='text-indent:3vw;' id='title_22'>阻燃劑</h3>
-                <table id="table_22" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_22'>阻燃劑</h3>
+                <table id="table_22" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2290,10 +2259,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 23: AntiULTRAVIOLET class-->
-                <br><h3 style='text-indent:3vw;' id='title_23'>紫外線吸收劑</h3>
-                <table id="table_23" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_23'>紫外線吸收劑</h3>
+                <table id="table_23" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2364,10 +2334,11 @@
                         </tr>
                     </tbody>
                 </table>
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
 
                 <!--Table 24: Antibiotic class-->
-                <br><h3 style='text-indent:3vw;' id='title_24'>抗菌劑</h3>
-                <table id="table_24" class="table table-striped table-hover table-info table-responsive" style='min-width:auto'>
+                <br><h3 class='indents-topic' id='title_24'>抗菌劑</h3>
+                <table id="table_24" class="table table-striped table-hover table-info table-responsive table-width p-size">
                     <thead>
                         <tr>
                             <th scope='col' class='th_1'>產品名稱</th>
@@ -2468,39 +2439,11 @@
                         </tr>
                     </tbody>
                 </table>
-
-                <!--
-                <div class="container-lg text-center">
-                    <p>See below for a variety of choices!</p>
-                </div>
-                <div class='row px-5'>
-                    <div class="col-sm-4 p-2">
-                        <img class='img-fluid rounded mx-auto d-block' style="height:10vw;"src='source\trademark.png' alt='icon 1'>
-                    </div>
-                    <div class="col-sm-8 p-4">
-                        <h1>Scouring and Dyeing Chemicals</h1>
-                        <div class='container text-left'>
-                            <button type="button" class="btn btn-outline-primary" onclick='location.href="products\\scour_dye.html"'>More Products</button>
-                        </div>
-                    </div>
-                </div><br>
-                
-                <div class='row px-5'>
-                    <div class="col-sm-4 p-2">
-                        <img class='img-fluid rounded mx-auto d-block' style="height:10vw;"src='source\trademark.png' alt='icon 1'>
-                    </div>
-                    <div class="col-sm-8 p-4">
-                        <h1>Finishing Chemicals</h1>
-                        <div class='container text-left'>
-                            <button type="button" class="btn btn-outline-primary" onclick='location.href="products\\finishing.html"'>More Products</button>
-                        </div>
-                    </div>
-                </div><br>
-            -->
+                <a class='top-href top-href-display' href='#top'>回到頂端</a>
             
             </div>
         </div>
-		<!-- Paragraph Section -->
+		<!-- End Paragraph Section -->
 
 		<!-- Footer Section -->
 		<div class="footer">
@@ -2533,92 +2476,6 @@
         <script src="js/popper.min.js"></script>
         <!-- Font Awesome -->
         <script src="js/all.min.js"></script>
-        <script>
-            var selection;
-            var table_count;
-            var col_count;
-            function selects(s) {
-                selection = s;
-            }
-
-            function searchBlock(item, display_item, filter) {
-                if (item) {
-                    var txtValue = item.textContent || item.innerText;
-                    if (txtValue.toLowerCase().indexOf(filter) > -1){
-                        display_item.style.display="";
-                    }
-                    else {
-                        display_item.style.display="none";
-                    }
-                }
-            }
-
-            function searchBlockBoolean(item, display_bool, filter) {
-                if (item) {
-                    var txtValue = item.textContent || item.innerText;
-                    if (txtValue.toLowerCase().indexOf(filter) > -1){
-                        return 1;
-                    }
-                    else {
-                        return 0;
-                    }
-                }
-            }
-
-            function sort(){
-                var input, filter, tables, trs, tds, s;
-                input = document.getElementById("search");
-                filter = input.value.toLowerCase();
-                /*Change the table count if anything added*/
-                table_count = 24;
-                col_count = 5;
-                tables = new Array(table_count);
-                trs = new Array(table_count);
-                for (var i = 0; i < tables.length; i++){
-                    s = "table_" + (i+1).toString();
-                    /*console.log(s);*/
-                    tables[i] = document.getElementById(s);
-                    trs[i] = tables[i].getElementsByTagName("tr");
-                    /*if j == 0, the tr inside thead will be considered in the below functions*/
-                    for (var j = 1; j < trs[i].length; j++){
-                        if (selection == 5) {
-                            console.log('success selection');
-                            tds = trs[i][j].getElementsByTagName("td");
-                            bool_count = 0;
-                            for (var k = 0; k < tds.length; k++){
-                                bool_count += searchBlockBoolean(tds[k], trs[i][j], filter);
-                            }
-                            if (bool_count == 0){
-                                trs[i][j].style.display = 'none';
-                            }
-                            else {
-                                trs[i][j].style.display = '';
-                            }
-                        }
-                        else {
-                            tds = trs[i][j].getElementsByTagName("td")[selection];
-                            searchBlock(tds, trs[i][j], filter);
-                        }
-
-                        /*console.log(i,j);*/
-                        /*
-                        tds = trs[i][j].getElementsByTagName("td")[selection];
-                        if (tds) {
-                            var txtValue = tds.textContent || tds.innerText;
-                            if (txtValue.toLowerCase().indexOf(filter) > -1){
-                                trs[i][j].style.display="";
-                            }
-                            else {
-                                trs[i][j].style.display="none";
-                            }
-                        }
-                        */
-                    }
-                }
-                console.log("successful search");
-            }
-        </script>
-
 		<!-- End Script Source Files -->
 </body>
 </html>
