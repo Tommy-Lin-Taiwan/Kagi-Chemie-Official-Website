@@ -1,6 +1,8 @@
 /*Usage for products as complementary functions*/ 
 
+/*
 console.log('Successfully opened complementary.js');
+*/
 
 var selection;
 var table_count;
