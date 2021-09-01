@@ -66,33 +66,31 @@ body {
 }
 /* End Navigation */
 
-.top_margin{
+.top_margin {
   /* background-color:blue; */
-  height:5.5rem;
+  height: 5.5rem;
 }
-
 
 /* Title */
-.title_sec_container{
+.title_sec_container {
   /* background-color:red; */
-  padding:2rem;
+  padding: 2rem;
 }
-.title{
+.title {
   /* background-color:peachpuff; */
-  text-align:center;
-  color:#fb3d36de;
+  text-align: center;
+  color: #fb3d36de;
 }
-.title h1{
-  font-size:3rem;
+.title h1 {
+  font-size: 3rem;
 }
-.text_box{
+.text_box {
   /* background-color:aqua; */
   margin: 1rem 5rem 1rem 5rem;
-  text-align:center;
-  font-size:1.2rem;
+  text-align: center;
+  font-size: 1.2rem;
 }
 /* Title End*/
-
 
 /* to Email Section */
 .toEmail {
@@ -111,34 +109,34 @@ body {
   margin: 3rem;
   padding: 2rem;
   border-radius: 1.5rem;
-  border:solid;
-  border-color:rgb(155, 190, 218);
-  border-width:1px;
+  border: solid;
+  border-color: rgb(155, 190, 218);
+  border-width: 1px;
 }
-.toEmail h3{
-  color:#374c6a;
-  margin-bottom:1rem;
-  word-spacing:2px;
-  font-weight:400;
-  font-size:2rem;
+.toEmail h3 {
+  color: #374c6a;
+  margin-bottom: 1rem;
+  word-spacing: 2px;
+  font-weight: 400;
+  font-size: 2rem;
 }
-.toEmail p{
-  color:black;
-  font-size:1.2rem;
-  font-weight:300;
-  margin-bottom:1rem;
+.toEmail p {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 .toEmail button {
   margin-top: 2rem;
 }
 /* for smaller than large screen */
-@media only screen and (max-width: 1026px){
-  .toEmail{
-    flex-direction:column;
-    justify-content:center;
+@media only screen and (max-width: 1026px) {
+  .toEmail {
+    flex-direction: column;
+    justify-content: center;
   }
-  .toEmail__container{
-    width:90%;
+  .toEmail__container {
+    width: 90%;
   }
 }
 /* End to Email Section */
@@ -154,14 +152,14 @@ body {
 }
 .info__col__left {
   margin: 1rem;
-  font-size:1.1rem;
+  font-size: 1.1rem;
   color: #455f87;
   text-transform: uppercase;
   font-weight: 500;
 }
 .info__col__right {
   margin: 1rem;
-  font-size:1.1rem;
+  font-size: 1.1rem;
   color: #374c6a;
   font-weight: 300;
 }

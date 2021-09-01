@@ -134,12 +134,37 @@ body {
 }
 .banner {
   justify-content: center;
-  font-size: 50px;
+  font-size: 6.5vw;
   word-spacing: 20px;
   font-weight: 800;
   color: #fb3d36;
 }
+
+@media screen and (min-width: 800px) {
+  .banner {
+    justify-content: center;
+    font-size: 50px;
+    word-spacing: 20px;
+    font-weight: 800;
+    color: #fb3d36;
+  }
+}
 /* End Hero Section*/
+
+/* Main Content Section */
+.topic-size {
+  font-size: 4vw;
+}
+.main-size {
+  font-size: 1.5vw;
+}
+
+@media screen and (min-width: 800px) {
+  .topic-size {
+    font-size: 40px;
+  }
+}
+/* End Main Content Section */
 
 /* Padding and Margin Section */
 .pad-x-1 {
@@ -199,6 +224,9 @@ body {
     margin: 0%;
   }
 }
+
+/*End Padding And Margin Session*/
+
 /* Table section */
 .table-padding {
   padding: 5%;
@@ -207,6 +235,11 @@ body {
 .p-1 {
   text-align: center;
 }
+
+.p-size {
+  font-size: 0.2vw;
+}
+
 /*change it to p-1 full width justify if necessary*/
 @media screen and (max-width: 1400px) {
   .p-1 {
