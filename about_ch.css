@@ -413,7 +413,11 @@ _textbox{
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.footer__container {
+.footer__row {
+  justify-content: center;
+  display: flex;
+}
+.footer__container:nth-child(2) {
   justify-content: center;
   display: flex;
   flex-direction: col;
@@ -421,5 +425,15 @@ _textbox{
 .footer__rights {
   font-weight: 200;
   color: #111220;
+}
+@media only screen and (max-width:840px){
+  .footer__container:nth-child(1){
+    display:block;
+  }
+}
+@media only screen and (max-width:440px){
+  .footer__container{
+    font-size:0.8rem;
+  }
 }
 /* End Footer Section */
