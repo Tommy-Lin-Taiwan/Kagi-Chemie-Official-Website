@@ -90,6 +90,16 @@ body {
   text-align: center;
   font-size: 1.2rem;
 }
+@media only scrren and (max-width: 500){
+  .text_box{
+    margin: 1rem 2rem 1rem 2rem;
+  }
+}
+@media only screen and (max-width:370px){
+  .text_box p{
+    font-size:0.8rem;
+  }
+}
 /* Title End*/
 
 /* to Email Section */
@@ -137,6 +147,8 @@ body {
   }
   .toEmail__container {
     width: 90%;
+    margin-left:auto;
+    margin-right:auto;
   }
 }
 /* End to Email Section */
@@ -163,7 +175,11 @@ body {
   color: #374c6a;
   font-weight: 300;
 }
-
+@media only screen and (max-width:400px){
+  .info__col__left{
+    display:none;
+  }
+}
 /* End Info Section */
 
 /* Footer Section */
