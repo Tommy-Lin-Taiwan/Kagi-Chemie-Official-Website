@@ -174,11 +174,14 @@ body {
   font-size:1.2rem;
 }
 @media only screen and (max-width: 800px){
+  .qa_set{
+    margin:0rem;
+  }
   .subtitle{
-    margin:2rem 4rem 0rem 4rem;
+    margin:2rem 1rem 2rem 2rem;
   }
   .qa_column{
-    display:inline;
+    display:block;
   }
   .qa_set{
     width:100%;
@@ -187,6 +190,11 @@ body {
 @media only screen and (max-width: 600px){
   .subtitle h2{
     font-size:3rem;
+  }
+}
+@media only screen and (max-width: 420px){
+  .subtitle h2{
+    font-size:2rem;
   }
 }
 /* Q&A End */
@@ -259,7 +267,11 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.footer__container {
+.footer__row {
+  justify-content: center;
+  display: flex;
+}
+.footer__container:nth-child(2) {
   justify-content: center;
   display: flex;
   flex-direction: col;
@@ -267,5 +279,15 @@ body {
 .footer__rights {
   font-weight: 200;
   color: #111220;
+}
+@media only screen and (max-width:840px){
+  .footer__container:nth-child(1){
+    display:block;
+  }
+}
+@media only screen and (max-width:440px){
+  .footer__container{
+    font-size:0.8rem;
+  }
 }
 /* End Footer Section */

@@ -408,13 +408,10 @@ h2 {
   color: #111220;
 }
 /* End Inquiry Section */
-
 /* Footer Section */
 .footer {
   background-color: #fafafa;
-  padding: 2vw;
-  font-size: 1vw;
-  align-items: center;
+  padding: 2rem;
 }
 .footer__container {
   justify-content: center;
@@ -442,10 +439,14 @@ h2 {
 .footer__nav-div {
   margin-top: 10px;
   color: #111220;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-.footer__container {
+.footer__row {
+  justify-content: center;
+  display: flex;
+}
+.footer__container:nth-child(2) {
   justify-content: center;
   display: flex;
   flex-direction: col;
@@ -453,5 +454,15 @@ h2 {
 .footer__rights {
   font-weight: 200;
   color: #111220;
+}
+@media only screen and (max-width:840px){
+  .footer__container:nth-child(1){
+    display:block;
+  }
+}
+@media only screen and (max-width:440px){
+  .footer__container{
+    font-size:0.8rem;
+  }
 }
 /* End Footer Section */
