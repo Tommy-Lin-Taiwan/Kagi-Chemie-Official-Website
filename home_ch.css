@@ -280,6 +280,17 @@ body {
     top:15%;
   }
 }
+@media only screen and (max-width: 615px){
+  .hero__content h1{
+    font-size:3rem;
+  }
+}
+@media only screen and (max-width: 500px){
+  #red__button{
+    width:8rem;
+    font-size:0.8rem;
+  }
+}
 
 /* End Hero Section */
 
@@ -292,6 +303,7 @@ body {
     rgb(255, 236, 241) 0%,
     rgba(193, 246, 255, 0.876) 100%
   );
+  padding:2rem 0rem 2rem 0rem;
 }
 .bus__container {
   margin-right: 4rem;
