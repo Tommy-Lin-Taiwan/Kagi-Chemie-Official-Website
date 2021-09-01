@@ -213,12 +213,12 @@ body {
 /* Core Values End */
 
 
-/* Cards Section */
+/* In__containers Section */
 .guarantee__cont{
   z-index:5;
   padding:7rem 7rem 5rem 7rem;
 }
-#Guarantees{
+.in__container{
   box-shadow: 0 10px 10px rgba(0,0,0,0.2),
   0 0px 1px rgba(0,0,0,0.2);
   height:30rem;
@@ -226,21 +226,21 @@ body {
   padding:0rem;
   display:flex;
 }
-#Guarantees img{
+.in__container img{
   width:50%;
   height:auto;
 }
-#Guarantees h3{
+.in__container h3{
   color:#374c6a;
   font-size:2rem;
   font-weight:400;
   margin-bottom:2rem;
 }
-#Guarantees p{
+.in__container p{
   font-size:1.2rem;
   margin-bottom:1rem;
 }
-#Guarantees ul{
+.in__container ul{
   font-size:1.2rem;
   margin-bottom:2rem;
 }
@@ -258,7 +258,7 @@ body {
   text-indent: 15px;
 }
 
-/* Cards Section End */
+/* In__containers Section End */
 
 /* Footer Section */
 .footer {
