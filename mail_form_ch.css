@@ -116,8 +116,11 @@ body {
   min-width:300px;
 }
 #mailform button{
-    width:100%;
-    margin-top:1.2rem;
+  display:block;
+  left:auto;
+  right:auto;
+  width:100%;
+  margin-top:1.2rem;
 }
 .row {
   flex-direction: row;
@@ -145,7 +148,7 @@ body {
 .row textarea{
   border-radius:1rem;
   border: 1px solid #2599ae;
-  margin:1rem;
+  /* margin:1rem; */
   width:97%;
   max-height:9rem;
 }
@@ -158,6 +161,23 @@ body {
   .text__container{
     width:100%;
     margin-bottom:3rem;
+  }
+}
+@media only screen and (max-width:800px){
+  .row{
+    flex-direction:column;
+  }
+  .form__element{
+    width:100%;
+  }
+}
+@media only screen and (max-width:430px){
+  .email-sec__container{
+    padding:0;
+    margin:0;
+  }
+  #mailform{
+    margin:0;
   }
 }
 /* End Send Email Section */
