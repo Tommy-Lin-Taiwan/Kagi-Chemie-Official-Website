@@ -66,7 +66,7 @@ if (!isset($_REQUEST['work email'])) {
 }
 
 /* Ensure all required spaces r filled */
-if (empty($first_name) || empty($last_name) || empty($company_name) || empty($work_email) || empty($message)) {
+else if (empty($first_name) || empty($last_name) || empty($company_name) || empty($work_email) || empty($message)) {
     header( "Location: $error" );
 }
 
