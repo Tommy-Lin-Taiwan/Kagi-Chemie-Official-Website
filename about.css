@@ -372,7 +372,6 @@ body {
   }
 }
 /* In__containers Section End */
-
 /* Footer Section */
 .footer {
   background-color: #fafafa;
@@ -384,6 +383,7 @@ body {
   flex-direction: col;
 }
 .footer__nav-link {
+  /* background:#2599ae; */
   margin-top: 10px;
   color: #111220;
   font-weight: 400;
@@ -423,6 +423,15 @@ body {
 @media only screen and (max-width:840px){
   .footer__container:nth-child(1){
     display:block;
+  }
+  .footer__nav-link{
+    margin:3px;
+  }
+  .footer__nav-div{
+    margin:3px;
+  }
+  .footer__email{
+    margin:3px;
   }
 }
 @media only screen and (max-width:440px){
