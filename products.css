@@ -134,38 +134,19 @@ body {
 }
 .banner {
   justify-content: center;
-  font-size: 8vw;
+  font-size: 50px;
   word-spacing: 20px;
   font-weight: 800;
   color: #fb3d36;
-}
-
-@media screen and (min-width: 800px) {
-  .banner {
-    justify-content: center;
-    font-size: 50px;
-    word-spacing: 20px;
-    font-weight: 800;
-    color: #fb3d36;
-  }
 }
 /* End Hero Section*/
 
 /* Main Content Section */
 .topic-size {
-  font-size: 6vw;
+  font-size: 40px;
 }
 .main-size {
-  font-size: 4vw;
-}
-
-@media screen and (min-width: 800px) {
-  .topic-size {
-    font-size: 40px;
-  }
-  .main-size {
-    font-size: 25px;
-  }
+  font-size: 25px;
 }
 /* End Main Content Section */
 
@@ -250,20 +231,13 @@ body {
   text-align: center;
 }
 
-.p-size {
-  font-size: 2vw;
-}
-
 .indents-topic {
-  text-indent: 0px;
+  text-indent: 3vw;
 }
 
-@media screen and (min-width: 750px) {
-  .p-size {
-    font-size: 1vw;
-  }
+@media screen and (max-width: 700px) {
   .indents-topic {
-    text-indent: 3vw;
+    text-indent: 0px;
   }
 }
 /*change it to p-1 full width justify if necessary*/
@@ -341,7 +315,6 @@ body {
 
 .top-href {
   float: left;
-  font-size: 0.2vw;
 }
 
 .top-href-display {
