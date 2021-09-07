@@ -149,6 +149,10 @@ body {
 .main-size {
   font-size: 25px;
 }
+
+.products_a {
+  text-decoration: none;
+}
 /* End Main Content Section */
 
 /* Padding and Margin Section */
